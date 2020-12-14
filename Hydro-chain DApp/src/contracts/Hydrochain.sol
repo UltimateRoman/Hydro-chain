@@ -6,18 +6,21 @@ contract Hydrochain {
 
     struct User {
         address payable userAddress;
-        uint units;
+        uint tunits;
+        uint cunits;
     }
 
     event userInitialized(
         uint id,
         address payable userAddress, 
-        uint units
+        uint tunits,
+        uint cunits
     );
 
     event unitsAdded (
         address payable userAddress, 
-        uint units
+        uint tunits,
+        uint cunits
     );
 
     event billPaid (
@@ -28,8 +31,8 @@ contract Hydrochain {
 
     function initializeUser() public {
         uCount++;
-        users[uCount] = User(msg.sender, 0);
-        emit userInitialized(uCount, msg.sender, 0);
+        users[uCount] = User(msg.sender, 0, 0);
+        emit userInitialized(uCount, msg.sender, 0, 0);
     }
 
     function addUnit(uint _units) public {
@@ -41,9 +44,12 @@ contract Hydrochain {
                 _user=users[_i];
                 break;
             }
-        _user.units = _user.units + _units;
+        if(_units > _user.tunits) {
+            _user.cunits += _units - _user.tunits;
+            _user.tunits = _units;
+        }
         users[_i] = _user;
-        emit unitsAdded(msg.sender,_units);
+        emit unitsAdded(msg.sender,_units,_user.cunits);
     }
 
     function payBill() public payable {
@@ -56,7 +62,7 @@ contract Hydrochain {
                 _user=users[_i];
                 break;
             }
-        _user.units=0;
+        _user.cunits=0;
         users[_i] = _user;
         emit billPaid(_deployer,msg.sender,msg.value);
     }
