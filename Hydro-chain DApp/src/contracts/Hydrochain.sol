@@ -61,4 +61,3 @@ contract Hydrochain {
         emit billPaid(_deployer,msg.sender,msg.value);
     }
 }
-

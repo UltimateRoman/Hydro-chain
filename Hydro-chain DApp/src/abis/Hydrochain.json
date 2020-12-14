@@ -145,15 +145,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"deployer\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"billPaid\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"userAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"units\",\"type\":\"uint256\"}],\"name\":\"unitsAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"userAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"units\",\"type\":\"uint256\"}],\"name\":\"userInitialized\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_units\",\"type\":\"uint256\"}],\"name\":\"addUnit\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"initializeUser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"payBill\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"uCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"users\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"userAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"units\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/E/CS/Hackathons/Devfolio online/HackInOut/new/Hydro-chain/Hydro-chain DApp/src/contracts/Hydrochain.sol\":\"Hydrochain\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/E/CS/Hackathons/Devfolio online/HackInOut/new/Hydro-chain/Hydro-chain DApp/src/contracts/Hydrochain.sol\":{\"keccak256\":\"0xc7b11ce9d98a7fae32727fbd9d1139bc5a3d582161531821451978f32fab14f9\",\"urls\":[\"bzz-raw://5cec1e9efc4cb7581b95f7ea58de46ebaf3ab24aee81da9ae1cff4bc256f1d55\",\"dweb:/ipfs/QmT2smCUAkGTPdp2fz2EDsXp4vQen2rL5mVfyBXSqgxSVJ\"]}},\"version\":1}",
-  "bytecode": "0x60806040526000805534801561001457600080fd5b506107d7806100246000396000f3fe60806040526004361061004a5760003560e01c8063341dc9f31461004f578063365b98b21461008a5780634b3538881461010c5780637a781658146101235780637bc8924b1461012d575b600080fd5b34801561005b57600080fd5b506100886004803603602081101561007257600080fd5b8101908080359060200190929190505050610158565b005b34801561009657600080fd5b506100c3600480360360208110156100ad57600080fd5b8101908080359060200190929190505050610360565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b34801561011857600080fd5b506101216103a4565b005b61012b6104c1565b005b34801561013957600080fd5b5061014261076c565b6040518082815260200191505060405180910390f35b600081101561016657600080fd5b6000610170610772565b600191505b6000548211610278573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561026d57600160008381526020019081526020016000206040518060400160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820154815250509050610278565b816001019150610175565b82816020015101816020018181525050806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550602082015181600101559050507f67e297ce148baa913004962a221038182733513c90bed1844b68af987d2793503384604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1505050565b60016020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154905082565b600080815480929190600101919050555060405180604001604052803373ffffffffffffffffffffffffffffffffffffffff1681526020016000815250600160008054815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550602082015181600101559050507fdee422879ee893c447f80ab59301c0983b5967aa619d66ddb326481b6efe2baa600054336000604051808481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1565b60006001600080815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f19350505050158015610542573d6000803e3d6000fd5b50600061054d610772565b600191505b6000548211610655573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561064a57600160008381526020019081526020016000206040518060400160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820154815250509050610655565b816001019150610552565b6000816020018181525050806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550602082015181600101559050507fc217499589f3ec1d5b2891594c80d8e6493c0ea24a503908b460cc5a806e9f69833334604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1505050565b60005481565b6040518060400160405280600073ffffffffffffffffffffffffffffffffffffffff16815260200160008152509056fea265627a7a72315820fe33a34b476f71d54d2d7e3ba125e8416436330596af8f1f6c9fe100937892c764736f6c63430005100032",
-  "deployedBytecode": "0x60806040526004361061004a5760003560e01c8063341dc9f31461004f578063365b98b21461008a5780634b3538881461010c5780637a781658146101235780637bc8924b1461012d575b600080fd5b34801561005b57600080fd5b506100886004803603602081101561007257600080fd5b8101908080359060200190929190505050610158565b005b34801561009657600080fd5b506100c3600480360360208110156100ad57600080fd5b8101908080359060200190929190505050610360565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b34801561011857600080fd5b506101216103a4565b005b61012b6104c1565b005b34801561013957600080fd5b5061014261076c565b6040518082815260200191505060405180910390f35b600081101561016657600080fd5b6000610170610772565b600191505b6000548211610278573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561026d57600160008381526020019081526020016000206040518060400160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820154815250509050610278565b816001019150610175565b82816020015101816020018181525050806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550602082015181600101559050507f67e297ce148baa913004962a221038182733513c90bed1844b68af987d2793503384604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1505050565b60016020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154905082565b600080815480929190600101919050555060405180604001604052803373ffffffffffffffffffffffffffffffffffffffff1681526020016000815250600160008054815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550602082015181600101559050507fdee422879ee893c447f80ab59301c0983b5967aa619d66ddb326481b6efe2baa600054336000604051808481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1565b60006001600080815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f19350505050158015610542573d6000803e3d6000fd5b50600061054d610772565b600191505b6000548211610655573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561064a57600160008381526020019081526020016000206040518060400160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820154815250509050610655565b816001019150610552565b6000816020018181525050806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550602082015181600101559050507fc217499589f3ec1d5b2891594c80d8e6493c0ea24a503908b460cc5a806e9f69833334604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1505050565b60005481565b6040518060400160405280600073ffffffffffffffffffffffffffffffffffffffff16815260200160008152509056fea265627a7a72315820fe33a34b476f71d54d2d7e3ba125e8416436330596af8f1f6c9fe100937892c764736f6c63430005100032",
-  "sourceMap": "27:1554:0:-;;;73:1;54:20;;27:1554;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:1554:0;;;;;;;",
-  "deployedSourceMap": "27:1554:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;706:400;;8:9:-1;5:2;;;30:1;27;20:12;5:2;706:400:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;706:400:0;;;;;;;;;;;;;;;;;:::i;:::-;;81:34;;8:9:-1;5:2;;;30:1;27;20:12;5:2;81:34:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;81:34:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;538:160;;8:9:-1;5:2;;;30:1;27;20:12;5:2;538:160:0;;;:::i;:::-;;1114:464;;;:::i;:::-;;54:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;54:20:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;706:400;772:1;762:6;:11;;754:20;;;;;;785:7;803:17;;:::i;:::-;838:1;835:4;;831:150;844:6;;840:2;:10;831:150;;896:10;873:33;;:5;:9;879:2;873:9;;;;;;;;;;;:21;;;;;;;;;;;;:33;;;870:111;;;932:5;:9;938:2;932:9;;;;;;;;;;;926:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;960:5;;870:111;851:4;;;;;831:150;;;1019:6;1005:5;:11;;;:20;991:5;:11;;:34;;;;;1048:5;1036;:9;1042:2;1036:9;;;;;;;;;;;:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1069:29;1080:10;1091:6;1069:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;706:400;;;:::o;81:34::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;538:160::-;582:6;;:8;;;;;;;;;;;;;617:19;;;;;;;;622:10;617:19;;;;;;634:1;617:19;;;601:5;:13;607:6;;601:13;;;;;;;;;;;:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;652:38;668:6;;676:10;688:1;652:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;538:160::o;1114:464::-;1159:25;1187:5;:8;1193:1;1187:8;;;;;;;;;;;:20;;;;;;;;;;;;1159:48;;1226:9;1218:27;;:38;1246:9;1218:38;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1218:38:0;1267:7;1285:17;;:::i;:::-;1320:1;1317:4;;1313:150;1326:6;;1322:2;:10;1313:150;;1378:10;1355:33;;:5;:9;1361:2;1355:9;;;;;;;;;;;:21;;;;;;;;;;;;:33;;;1352:111;;;1414:5;:9;1420:2;1414:9;;;;;;;;;;;1408:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1442:5;;1352:111;1333:4;;;;;1313:150;;;1485:1;1473:5;:11;;:13;;;;;1509:5;1497;:9;1503:2;1497:9;;;;;;;;;;;:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1530:40;1539:9;1549:10;1560:9;1530:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1114:464;;;:::o;54:20::-;;;;:::o;27:1554::-;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Hydrochain {\r\n    uint public uCount=0;\r\n    mapping(uint => User) public users;\r\n\r\n    struct User {\r\n        address payable userAddress;\r\n        uint units;\r\n    }\r\n\r\n    event userInitialized(\r\n        uint id,\r\n        address payable userAddress, \r\n        uint units\r\n    );\r\n\r\n    event unitsAdded (\r\n        address payable userAddress, \r\n        uint units\r\n    );\r\n\r\n    event billPaid (\r\n        address payable deployer,\r\n        address payable user,\r\n        uint amount\r\n    );\r\n\r\n    function initializeUser() public {\r\n        uCount++;\r\n        users[uCount] = User(msg.sender, 0);\r\n        emit userInitialized(uCount, msg.sender, 0);\r\n    }\r\n\r\n    function addUnit(uint _units) public {\r\n        require(_units >= 0);\r\n        uint _i;\r\n        User memory _user;\r\n        for(_i=1;_i<=uCount;++_i)\r\n            if(users[_i].userAddress==msg.sender){\r\n                _user=users[_i];\r\n                break;\r\n            }\r\n        _user.units = _user.units + _units;\r\n        users[_i] = _user;\r\n        emit unitsAdded(msg.sender,_units);\r\n    }\r\n\r\n    function payBill() public payable {\r\n        address payable _deployer = users[0].userAddress;\r\n        address(_deployer).transfer(msg.value);\r\n        uint _i;\r\n        User memory _user;\r\n        for(_i=1;_i<=uCount;++_i)\r\n            if(users[_i].userAddress==msg.sender){\r\n                _user=users[_i];\r\n                break;\r\n            }\r\n        _user.units=0;\r\n        users[_i] = _user;\r\n        emit billPaid(_deployer,msg.sender,msg.value);\r\n    }\r\n}\r\n\r\n",
-  "sourcePath": "E:\\CS\\Hackathons\\Devfolio online\\HackInOut\\new\\Hydro-chain\\Hydro-chain DApp\\src\\contracts\\Hydrochain.sol",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"deployer\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"billPaid\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"userAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"units\",\"type\":\"uint256\"}],\"name\":\"unitsAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"userAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"units\",\"type\":\"uint256\"}],\"name\":\"userInitialized\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_units\",\"type\":\"uint256\"}],\"name\":\"addUnit\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"initializeUser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"payBill\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"uCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"users\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"userAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"units\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/alan/Projects/blockchain/Hydro/src/contracts/Hydrochain.sol\":\"Hydrochain\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/alan/Projects/blockchain/Hydro/src/contracts/Hydrochain.sol\":{\"keccak256\":\"0xef6df6116eea7a02b4eeb24c525d903da402adcb196a79df9a311842756d58cf\",\"urls\":[\"bzz-raw://c8831527492b86a42ba5655a3ded6643287b2616820ca205619e1806d97853f5\",\"dweb:/ipfs/QmQi1kg3cj6NYX4yVMV4bmS2tEPyBiBg9tmetbumQx9Rcm\"]}},\"version\":1}",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b506107d7806100246000396000f3fe60806040526004361061004a5760003560e01c8063341dc9f31461004f578063365b98b21461008a5780634b3538881461010c5780637a781658146101235780637bc8924b1461012d575b600080fd5b34801561005b57600080fd5b506100886004803603602081101561007257600080fd5b8101908080359060200190929190505050610158565b005b34801561009657600080fd5b506100c3600480360360208110156100ad57600080fd5b8101908080359060200190929190505050610360565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b34801561011857600080fd5b506101216103a4565b005b61012b6104c1565b005b34801561013957600080fd5b5061014261076c565b6040518082815260200191505060405180910390f35b600081101561016657600080fd5b6000610170610772565b600191505b6000548211610278573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561026d57600160008381526020019081526020016000206040518060400160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820154815250509050610278565b816001019150610175565b82816020015101816020018181525050806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550602082015181600101559050507f67e297ce148baa913004962a221038182733513c90bed1844b68af987d2793503384604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1505050565b60016020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154905082565b600080815480929190600101919050555060405180604001604052803373ffffffffffffffffffffffffffffffffffffffff1681526020016000815250600160008054815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550602082015181600101559050507fdee422879ee893c447f80ab59301c0983b5967aa619d66ddb326481b6efe2baa600054336000604051808481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1565b60006001600080815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f19350505050158015610542573d6000803e3d6000fd5b50600061054d610772565b600191505b6000548211610655573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561064a57600160008381526020019081526020016000206040518060400160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820154815250509050610655565b816001019150610552565b6000816020018181525050806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550602082015181600101559050507fc217499589f3ec1d5b2891594c80d8e6493c0ea24a503908b460cc5a806e9f69833334604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1505050565b60005481565b6040518060400160405280600073ffffffffffffffffffffffffffffffffffffffff16815260200160008152509056fea265627a7a72315820c472055029462b38cd02d8abb4cc5182a1d1d2b500b828e1d7c18eddcc3ec5c164736f6c63430005100032",
+  "deployedBytecode": "0x60806040526004361061004a5760003560e01c8063341dc9f31461004f578063365b98b21461008a5780634b3538881461010c5780637a781658146101235780637bc8924b1461012d575b600080fd5b34801561005b57600080fd5b506100886004803603602081101561007257600080fd5b8101908080359060200190929190505050610158565b005b34801561009657600080fd5b506100c3600480360360208110156100ad57600080fd5b8101908080359060200190929190505050610360565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b34801561011857600080fd5b506101216103a4565b005b61012b6104c1565b005b34801561013957600080fd5b5061014261076c565b6040518082815260200191505060405180910390f35b600081101561016657600080fd5b6000610170610772565b600191505b6000548211610278573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561026d57600160008381526020019081526020016000206040518060400160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820154815250509050610278565b816001019150610175565b82816020015101816020018181525050806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550602082015181600101559050507f67e297ce148baa913004962a221038182733513c90bed1844b68af987d2793503384604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1505050565b60016020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154905082565b600080815480929190600101919050555060405180604001604052803373ffffffffffffffffffffffffffffffffffffffff1681526020016000815250600160008054815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550602082015181600101559050507fdee422879ee893c447f80ab59301c0983b5967aa619d66ddb326481b6efe2baa600054336000604051808481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1565b60006001600080815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f19350505050158015610542573d6000803e3d6000fd5b50600061054d610772565b600191505b6000548211610655573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561064a57600160008381526020019081526020016000206040518060400160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820154815250509050610655565b816001019150610552565b6000816020018181525050806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550602082015181600101559050507fc217499589f3ec1d5b2891594c80d8e6493c0ea24a503908b460cc5a806e9f69833334604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1505050565b60005481565b6040518060400160405280600073ffffffffffffffffffffffffffffffffffffffff16815260200160008152509056fea265627a7a72315820c472055029462b38cd02d8abb4cc5182a1d1d2b500b828e1d7c18eddcc3ec5c164736f6c63430005100032",
+  "sourceMap": "25:1494:0:-;;;70:1;51:20;;25:1494;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:1494:0;;;;;;;",
+  "deployedSourceMap": "25:1494:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;672:388;;8:9:-1;5:2;;;30:1;27;20:12;5:2;672:388:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;672:388:0;;;;;;;;;;;;;;;;;:::i;:::-;;77:34;;8:9:-1;5:2;;;30:1;27;20:12;5:2;77:34:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;77:34:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;510:156;;8:9:-1;5:2;;;30:1;27;20:12;5:2;510:156:0;;;:::i;:::-;;1066:451;;;:::i;:::-;;51:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;51:20:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;672:388;737:1;727:6;:11;;719:20;;;;;;749:7;766:17;;:::i;:::-;800:1;797:4;;793:146;806:6;;802:2;:10;793:146;;857:10;834:33;;:5;:9;840:2;834:9;;;;;;;;;;;:21;;;;;;;;;;;;:33;;;831:108;;;892:5;:9;898:2;892:9;;;;;;;;;;;886:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;919:5;;831:108;813:4;;;;;793:146;;;976:6;962:5;:11;;;:20;948:5;:11;;:34;;;;;1004:5;992;:9;998:2;992:9;;;;;;;;;;;:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1024:29;1035:10;1046:6;1024:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;672:388;;;:::o;77:34::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;510:156::-;553:6;;:8;;;;;;;;;;;;;587:19;;;;;;;;592:10;587:19;;;;;;604:1;587:19;;;571:5;:13;577:6;;571:13;;;;;;;;;;;:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;621:38;637:6;;645:10;657:1;621:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;510:156::o;1066:451::-;1110:25;1138:5;:8;1144:1;1138:8;;;;;;;;;;;:20;;;;;;;;;;;;1110:48;;1176:9;1168:27;;:38;1196:9;1168:38;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1168:38:0;1216:7;1233:17;;:::i;:::-;1267:1;1264:4;;1260:146;1273:6;;1269:2;:10;1260:146;;1324:10;1301:33;;:5;:9;1307:2;1301:9;;;;;;;;;;;:21;;;;;;;;;;;;:33;;;1298:108;;;1359:5;:9;1365:2;1359:9;;;;;;;;;;;1353:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1386:5;;1298:108;1280:4;;;;;1260:146;;;1427:1;1415:5;:11;;:13;;;;;1450:5;1438;:9;1444:2;1438:9;;;;;;;;;;;:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1470:40;1479:9;1489:10;1500:9;1470:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1066:451;;;:::o;51:20::-;;;;:::o;25:1494::-;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\ncontract Hydrochain {\n    uint public uCount=0;\n    mapping(uint => User) public users;\n\n    struct User {\n        address payable userAddress;\n        uint units;\n    }\n\n    event userInitialized(\n        uint id,\n        address payable userAddress, \n        uint units\n    );\n\n    event unitsAdded (\n        address payable userAddress, \n        uint units\n    );\n\n    event billPaid (\n        address payable deployer,\n        address payable user,\n        uint amount\n    );\n\n    function initializeUser() public {\n        uCount++;\n        users[uCount] = User(msg.sender, 0);\n        emit userInitialized(uCount, msg.sender, 0);\n    }\n\n    function addUnit(uint _units) public {\n        require(_units >= 0);\n        uint _i;\n        User memory _user;\n        for(_i=1;_i<=uCount;++_i)\n            if(users[_i].userAddress==msg.sender){\n                _user=users[_i];\n                break;\n            }\n        _user.units = _user.units + _units;\n        users[_i] = _user;\n        emit unitsAdded(msg.sender,_units);\n    }\n\n    function payBill() public payable {\n        address payable _deployer = users[0].userAddress;\n        address(_deployer).transfer(msg.value);\n        uint _i;\n        User memory _user;\n        for(_i=1;_i<=uCount;++_i)\n            if(users[_i].userAddress==msg.sender){\n                _user=users[_i];\n                break;\n            }\n        _user.units=0;\n        users[_i] = _user;\n        emit billPaid(_deployer,msg.sender,msg.value);\n    }\n}\n",
+  "sourcePath": "/home/alan/Projects/blockchain/Hydro/src/contracts/Hydrochain.sol",
   "ast": {
-    "absolutePath": "/E/CS/Hackathons/Devfolio online/HackInOut/new/Hydro-chain/Hydro-chain DApp/src/contracts/Hydrochain.sol",
+    "absolutePath": "/home/alan/Projects/blockchain/Hydro/src/contracts/Hydrochain.sol",
     "exportedSymbols": {
       "Hydrochain": [
         198
@@ -192,7 +192,7 @@
             "name": "uCount",
             "nodeType": "VariableDeclaration",
             "scope": 198,
-            "src": "54:20:0",
+            "src": "51:20:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -203,7 +203,7 @@
               "id": 2,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "54:4:0",
+              "src": "51:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -219,7 +219,7 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "73:1:0",
+              "src": "70:1:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
@@ -235,7 +235,7 @@
             "name": "users",
             "nodeType": "VariableDeclaration",
             "scope": 198,
-            "src": "81:34:0",
+            "src": "77:34:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -248,14 +248,14 @@
                 "id": 5,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "89:4:0",
+                "src": "85:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "81:21:0",
+              "src": "77:21:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                 "typeString": "mapping(uint256 => struct Hydrochain.User)"
@@ -266,7 +266,7 @@
                 "name": "User",
                 "nodeType": "UserDefinedTypeName",
                 "referencedDeclaration": 13,
-                "src": "97:4:0",
+                "src": "93:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_User_$13_storage_ptr",
                   "typeString": "struct Hydrochain.User"
@@ -286,7 +286,7 @@
                 "name": "userAddress",
                 "nodeType": "VariableDeclaration",
                 "scope": 13,
-                "src": "147:27:0",
+                "src": "140:27:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -297,7 +297,7 @@
                   "id": 9,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "147:15:0",
+                  "src": "140:15:0",
                   "stateMutability": "payable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address_payable",
@@ -313,7 +313,7 @@
                 "name": "units",
                 "nodeType": "VariableDeclaration",
                 "scope": 13,
-                "src": "185:10:0",
+                "src": "177:10:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -324,7 +324,7 @@
                   "id": 11,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "185:4:0",
+                  "src": "177:4:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -337,7 +337,7 @@
             "name": "User",
             "nodeType": "StructDefinition",
             "scope": 198,
-            "src": "124:79:0",
+            "src": "118:76:0",
             "visibility": "public"
           },
           {
@@ -357,7 +357,7 @@
                   "name": "id",
                   "nodeType": "VariableDeclaration",
                   "scope": 21,
-                  "src": "243:7:0",
+                  "src": "231:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -368,7 +368,7 @@
                     "id": 14,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "243:4:0",
+                    "src": "231:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -384,7 +384,7 @@
                   "name": "userAddress",
                   "nodeType": "VariableDeclaration",
                   "scope": 21,
-                  "src": "261:27:0",
+                  "src": "248:27:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -395,7 +395,7 @@
                     "id": 16,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "261:15:0",
+                    "src": "248:15:0",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -412,7 +412,7 @@
                   "name": "units",
                   "nodeType": "VariableDeclaration",
                   "scope": 21,
-                  "src": "300:10:0",
+                  "src": "286:10:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -423,7 +423,7 @@
                     "id": 18,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "300:4:0",
+                    "src": "286:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -433,9 +433,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "232:85:0"
+              "src": "221:81:0"
             },
-            "src": "211:107:0"
+            "src": "200:103:0"
           },
           {
             "anonymous": false,
@@ -454,7 +454,7 @@
                   "name": "userAddress",
                   "nodeType": "VariableDeclaration",
                   "scope": 27,
-                  "src": "354:27:0",
+                  "src": "336:27:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -465,7 +465,7 @@
                     "id": 22,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "354:15:0",
+                    "src": "336:15:0",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -482,7 +482,7 @@
                   "name": "units",
                   "nodeType": "VariableDeclaration",
                   "scope": 27,
-                  "src": "393:10:0",
+                  "src": "374:10:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -493,7 +493,7 @@
                     "id": 24,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "393:4:0",
+                    "src": "374:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -503,9 +503,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "343:67:0"
+              "src": "326:64:0"
             },
-            "src": "326:85:0"
+            "src": "309:82:0"
           },
           {
             "anonymous": false,
@@ -524,7 +524,7 @@
                   "name": "deployer",
                   "nodeType": "VariableDeclaration",
                   "scope": 35,
-                  "src": "445:24:0",
+                  "src": "422:24:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -535,7 +535,7 @@
                     "id": 28,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "445:15:0",
+                    "src": "422:15:0",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -552,7 +552,7 @@
                   "name": "user",
                   "nodeType": "VariableDeclaration",
                   "scope": 35,
-                  "src": "480:20:0",
+                  "src": "456:20:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -563,7 +563,7 @@
                     "id": 30,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "480:15:0",
+                    "src": "456:15:0",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -580,7 +580,7 @@
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
                   "scope": 35,
-                  "src": "511:11:0",
+                  "src": "486:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -591,7 +591,7 @@
                     "id": 32,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "511:4:0",
+                    "src": "486:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -601,15 +601,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "434:95:0"
+              "src": "412:91:0"
             },
-            "src": "419:111:0"
+            "src": "397:107:0"
           },
           {
             "body": {
               "id": 58,
               "nodeType": "Block",
-              "src": "571:127:0",
+              "src": "543:123:0",
               "statements": [
                 {
                   "expression": {
@@ -622,7 +622,7 @@
                     "nodeType": "UnaryOperation",
                     "operator": "++",
                     "prefix": false,
-                    "src": "582:8:0",
+                    "src": "553:8:0",
                     "subExpression": {
                       "argumentTypes": null,
                       "id": 38,
@@ -630,7 +630,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 4,
-                      "src": "582:6:0",
+                      "src": "553:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -643,7 +643,7 @@
                   },
                   "id": 40,
                   "nodeType": "ExpressionStatement",
-                  "src": "582:8:0"
+                  "src": "553:8:0"
                 },
                 {
                   "expression": {
@@ -662,7 +662,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 8,
-                        "src": "601:5:0",
+                        "src": "571:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                           "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -676,7 +676,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4,
-                        "src": "607:6:0",
+                        "src": "577:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -687,7 +687,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "601:13:0",
+                      "src": "571:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_storage",
                         "typeString": "struct Hydrochain.User storage ref"
@@ -707,7 +707,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 270,
-                            "src": "622:3:0",
+                            "src": "592:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
@@ -721,7 +721,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "622:10:0",
+                          "src": "592:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
@@ -737,7 +737,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "634:1:0",
+                          "src": "604:1:0",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_0_by_1",
@@ -762,7 +762,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 13,
-                        "src": "617:4:0",
+                        "src": "587:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_User_$13_storage_ptr_$",
                           "typeString": "type(struct Hydrochain.User storage pointer)"
@@ -776,13 +776,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "617:19:0",
+                      "src": "587:19:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_memory",
                         "typeString": "struct Hydrochain.User memory"
                       }
                     },
-                    "src": "601:35:0",
+                    "src": "571:35:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_User_$13_storage",
                       "typeString": "struct Hydrochain.User storage ref"
@@ -790,7 +790,7 @@
                   },
                   "id": 50,
                   "nodeType": "ExpressionStatement",
-                  "src": "601:35:0"
+                  "src": "571:35:0"
                 },
                 {
                   "eventCall": {
@@ -803,7 +803,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4,
-                        "src": "668:6:0",
+                        "src": "637:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -818,7 +818,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "676:3:0",
+                          "src": "645:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -832,7 +832,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "676:10:0",
+                        "src": "645:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -848,7 +848,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "688:1:0",
+                        "src": "657:1:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_0_by_1",
@@ -877,7 +877,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 21,
-                      "src": "652:15:0",
+                      "src": "621:15:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_address_payable_$_t_uint256_$returns$__$",
                         "typeString": "function (uint256,address payable,uint256)"
@@ -891,7 +891,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "652:38:0",
+                    "src": "621:38:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -899,7 +899,7 @@
                   },
                   "id": 57,
                   "nodeType": "EmitStatement",
-                  "src": "647:43:0"
+                  "src": "616:43:0"
                 }
               ]
             },
@@ -914,16 +914,16 @@
               "id": 36,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "561:2:0"
+              "src": "533:2:0"
             },
             "returnParameters": {
               "id": 37,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "571:0:0"
+              "src": "543:0:0"
             },
             "scope": 198,
-            "src": "538:160:0",
+            "src": "510:156:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -932,7 +932,7 @@
             "body": {
               "id": 124,
               "nodeType": "Block",
-              "src": "743:363:0",
+              "src": "709:351:0",
               "statements": [
                 {
                   "expression": {
@@ -956,7 +956,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 61,
-                          "src": "762:6:0",
+                          "src": "727:6:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -974,7 +974,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "772:1:0",
+                          "src": "737:1:0",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_0_by_1",
@@ -982,7 +982,7 @@
                           },
                           "value": "0"
                         },
-                        "src": "762:11:0",
+                        "src": "727:11:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1004,7 +1004,7 @@
                         274
                       ],
                       "referencedDeclaration": 273,
-                      "src": "754:7:0",
+                      "src": "719:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
@@ -1018,7 +1018,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "754:20:0",
+                    "src": "719:20:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1026,7 +1026,7 @@
                   },
                   "id": 69,
                   "nodeType": "ExpressionStatement",
-                  "src": "754:20:0"
+                  "src": "719:20:0"
                 },
                 {
                   "assignments": [
@@ -1039,7 +1039,7 @@
                       "name": "_i",
                       "nodeType": "VariableDeclaration",
                       "scope": 124,
-                      "src": "785:7:0",
+                      "src": "749:7:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -1050,7 +1050,7 @@
                         "id": 70,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
-                        "src": "785:4:0",
+                        "src": "749:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1063,7 +1063,7 @@
                   "id": 72,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "785:7:0"
+                  "src": "749:7:0"
                 },
                 {
                   "assignments": [
@@ -1076,7 +1076,7 @@
                       "name": "_user",
                       "nodeType": "VariableDeclaration",
                       "scope": 124,
-                      "src": "803:17:0",
+                      "src": "766:17:0",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
@@ -1089,7 +1089,7 @@
                         "name": "User",
                         "nodeType": "UserDefinedTypeName",
                         "referencedDeclaration": 13,
-                        "src": "803:4:0",
+                        "src": "766:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_User_$13_storage_ptr",
                           "typeString": "struct Hydrochain.User"
@@ -1102,7 +1102,7 @@
                   "id": 75,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "803:17:0"
+                  "src": "766:17:0"
                 },
                 {
                   "body": {
@@ -1128,7 +1128,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 8,
-                            "src": "873:5:0",
+                            "src": "834:5:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                               "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -1142,7 +1142,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 71,
-                            "src": "879:2:0",
+                            "src": "840:2:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -1153,7 +1153,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "nodeType": "IndexAccess",
-                          "src": "873:9:0",
+                          "src": "834:9:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_User_$13_storage",
                             "typeString": "struct Hydrochain.User storage ref"
@@ -1167,7 +1167,7 @@
                         "memberName": "userAddress",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 10,
-                        "src": "873:21:0",
+                        "src": "834:21:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -1184,7 +1184,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "896:3:0",
+                          "src": "857:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -1198,13 +1198,13 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "896:10:0",
+                        "src": "857:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       },
-                      "src": "873:33:0",
+                      "src": "834:33:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1213,11 +1213,11 @@
                     "falseBody": null,
                     "id": 101,
                     "nodeType": "IfStatement",
-                    "src": "870:111:0",
+                    "src": "831:108:0",
                     "trueBody": {
                       "id": 100,
                       "nodeType": "Block",
-                      "src": "907:74:0",
+                      "src": "868:71:0",
                       "statements": [
                         {
                           "expression": {
@@ -1234,7 +1234,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 74,
-                              "src": "926:5:0",
+                              "src": "886:5:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                                 "typeString": "struct Hydrochain.User memory"
@@ -1251,7 +1251,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 8,
-                                "src": "932:5:0",
+                                "src": "892:5:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                                   "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -1265,7 +1265,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 71,
-                                "src": "938:2:0",
+                                "src": "898:2:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -1276,13 +1276,13 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "932:9:0",
+                              "src": "892:9:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_User_$13_storage",
                                 "typeString": "struct Hydrochain.User storage ref"
                               }
                             },
-                            "src": "926:15:0",
+                            "src": "886:15:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                               "typeString": "struct Hydrochain.User memory"
@@ -1290,12 +1290,12 @@
                           },
                           "id": 98,
                           "nodeType": "ExpressionStatement",
-                          "src": "926:15:0"
+                          "src": "886:15:0"
                         },
                         {
                           "id": 99,
                           "nodeType": "Break",
-                          "src": "960:5:0"
+                          "src": "919:5:0"
                         }
                       ]
                     }
@@ -1318,7 +1318,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 71,
-                      "src": "840:2:0",
+                      "src": "802:2:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1333,13 +1333,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 4,
-                      "src": "844:6:0",
+                      "src": "806:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "840:10:0",
+                    "src": "802:10:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1361,7 +1361,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 71,
-                        "src": "835:2:0",
+                        "src": "797:2:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1379,7 +1379,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "838:1:0",
+                        "src": "800:1:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_1_by_1",
@@ -1387,7 +1387,7 @@
                         },
                         "value": "1"
                       },
-                      "src": "835:4:0",
+                      "src": "797:4:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1395,7 +1395,7 @@
                     },
                     "id": 79,
                     "nodeType": "ExpressionStatement",
-                    "src": "835:4:0"
+                    "src": "797:4:0"
                   },
                   "loopExpression": {
                     "expression": {
@@ -1408,7 +1408,7 @@
                       "nodeType": "UnaryOperation",
                       "operator": "++",
                       "prefix": true,
-                      "src": "851:4:0",
+                      "src": "813:4:0",
                       "subExpression": {
                         "argumentTypes": null,
                         "id": 83,
@@ -1416,7 +1416,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 71,
-                        "src": "853:2:0",
+                        "src": "815:2:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1429,10 +1429,10 @@
                     },
                     "id": 85,
                     "nodeType": "ExpressionStatement",
-                    "src": "851:4:0"
+                    "src": "813:4:0"
                   },
                   "nodeType": "ForStatement",
-                  "src": "831:150:0"
+                  "src": "793:146:0"
                 },
                 {
                   "expression": {
@@ -1451,7 +1451,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 74,
-                        "src": "991:5:0",
+                        "src": "948:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                           "typeString": "struct Hydrochain.User memory"
@@ -1465,7 +1465,7 @@
                       "memberName": "units",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 12,
-                      "src": "991:11:0",
+                      "src": "948:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1493,7 +1493,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 74,
-                          "src": "1005:5:0",
+                          "src": "962:5:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                             "typeString": "struct Hydrochain.User memory"
@@ -1507,7 +1507,7 @@
                         "memberName": "units",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 12,
-                        "src": "1005:11:0",
+                        "src": "962:11:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1522,19 +1522,19 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 61,
-                        "src": "1019:6:0",
+                        "src": "976:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         }
                       },
-                      "src": "1005:20:0",
+                      "src": "962:20:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "991:34:0",
+                    "src": "948:34:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1542,7 +1542,7 @@
                   },
                   "id": 111,
                   "nodeType": "ExpressionStatement",
-                  "src": "991:34:0"
+                  "src": "948:34:0"
                 },
                 {
                   "expression": {
@@ -1561,7 +1561,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 8,
-                        "src": "1036:5:0",
+                        "src": "992:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                           "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -1575,7 +1575,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 71,
-                        "src": "1042:2:0",
+                        "src": "998:2:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1586,7 +1586,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1036:9:0",
+                      "src": "992:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_storage",
                         "typeString": "struct Hydrochain.User storage ref"
@@ -1601,13 +1601,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 74,
-                      "src": "1048:5:0",
+                      "src": "1004:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                         "typeString": "struct Hydrochain.User memory"
                       }
                     },
-                    "src": "1036:17:0",
+                    "src": "992:17:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_User_$13_storage",
                       "typeString": "struct Hydrochain.User storage ref"
@@ -1615,7 +1615,7 @@
                   },
                   "id": 117,
                   "nodeType": "ExpressionStatement",
-                  "src": "1036:17:0"
+                  "src": "992:17:0"
                 },
                 {
                   "eventCall": {
@@ -1630,7 +1630,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "1080:3:0",
+                          "src": "1035:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -1644,7 +1644,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1080:10:0",
+                        "src": "1035:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -1657,7 +1657,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 61,
-                        "src": "1091:6:0",
+                        "src": "1046:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1680,7 +1680,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 27,
-                      "src": "1069:10:0",
+                      "src": "1024:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_payable_$_t_uint256_$returns$__$",
                         "typeString": "function (address payable,uint256)"
@@ -1694,7 +1694,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1069:29:0",
+                    "src": "1024:29:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1702,7 +1702,7 @@
                   },
                   "id": 123,
                   "nodeType": "EmitStatement",
-                  "src": "1064:34:0"
+                  "src": "1019:34:0"
                 }
               ]
             },
@@ -1723,7 +1723,7 @@
                   "name": "_units",
                   "nodeType": "VariableDeclaration",
                   "scope": 125,
-                  "src": "723:11:0",
+                  "src": "689:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1734,7 +1734,7 @@
                     "id": 60,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "723:4:0",
+                    "src": "689:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1744,16 +1744,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "722:13:0"
+              "src": "688:13:0"
             },
             "returnParameters": {
               "id": 63,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "743:0:0"
+              "src": "709:0:0"
             },
             "scope": 198,
-            "src": "706:400:0",
+            "src": "672:388:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -1762,7 +1762,7 @@
             "body": {
               "id": 196,
               "nodeType": "Block",
-              "src": "1148:430:0",
+              "src": "1100:417:0",
               "statements": [
                 {
                   "assignments": [
@@ -1775,7 +1775,7 @@
                       "name": "_deployer",
                       "nodeType": "VariableDeclaration",
                       "scope": 196,
-                      "src": "1159:25:0",
+                      "src": "1110:25:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -1786,7 +1786,7 @@
                         "id": 128,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1159:15:0",
+                        "src": "1110:15:0",
                         "stateMutability": "payable",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
@@ -1809,7 +1809,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 8,
-                        "src": "1187:5:0",
+                        "src": "1138:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                           "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -1826,7 +1826,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1193:1:0",
+                        "src": "1144:1:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_0_by_1",
@@ -1839,7 +1839,7 @@
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "1187:8:0",
+                      "src": "1138:8:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_storage",
                         "typeString": "struct Hydrochain.User storage ref"
@@ -1853,14 +1853,14 @@
                     "memberName": "userAddress",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": 10,
-                    "src": "1187:20:0",
+                    "src": "1138:20:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
                       "typeString": "address payable"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1159:48:0"
+                  "src": "1110:48:0"
                 },
                 {
                   "expression": {
@@ -1875,7 +1875,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "1246:3:0",
+                          "src": "1196:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -1889,7 +1889,7 @@
                         "memberName": "value",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1246:9:0",
+                        "src": "1196:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1913,7 +1913,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 129,
-                            "src": "1226:9:0",
+                            "src": "1176:9:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address_payable",
                               "typeString": "address payable"
@@ -1933,7 +1933,7 @@
                           "isPure": true,
                           "lValueRequested": false,
                           "nodeType": "ElementaryTypeNameExpression",
-                          "src": "1218:7:0",
+                          "src": "1168:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_address_$",
                             "typeString": "type(address)"
@@ -1948,7 +1948,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1218:18:0",
+                        "src": "1168:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -1962,7 +1962,7 @@
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1218:27:0",
+                      "src": "1168:27:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
@@ -1976,7 +1976,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1218:38:0",
+                    "src": "1168:38:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1984,7 +1984,7 @@
                   },
                   "id": 142,
                   "nodeType": "ExpressionStatement",
-                  "src": "1218:38:0"
+                  "src": "1168:38:0"
                 },
                 {
                   "assignments": [
@@ -1997,7 +1997,7 @@
                       "name": "_i",
                       "nodeType": "VariableDeclaration",
                       "scope": 196,
-                      "src": "1267:7:0",
+                      "src": "1216:7:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -2008,7 +2008,7 @@
                         "id": 143,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1267:4:0",
+                        "src": "1216:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2021,7 +2021,7 @@
                   "id": 145,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1267:7:0"
+                  "src": "1216:7:0"
                 },
                 {
                   "assignments": [
@@ -2034,7 +2034,7 @@
                       "name": "_user",
                       "nodeType": "VariableDeclaration",
                       "scope": 196,
-                      "src": "1285:17:0",
+                      "src": "1233:17:0",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
@@ -2047,7 +2047,7 @@
                         "name": "User",
                         "nodeType": "UserDefinedTypeName",
                         "referencedDeclaration": 13,
-                        "src": "1285:4:0",
+                        "src": "1233:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_User_$13_storage_ptr",
                           "typeString": "struct Hydrochain.User"
@@ -2060,7 +2060,7 @@
                   "id": 148,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1285:17:0"
+                  "src": "1233:17:0"
                 },
                 {
                   "body": {
@@ -2086,7 +2086,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 8,
-                            "src": "1355:5:0",
+                            "src": "1301:5:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                               "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -2100,7 +2100,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 144,
-                            "src": "1361:2:0",
+                            "src": "1307:2:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -2111,7 +2111,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "nodeType": "IndexAccess",
-                          "src": "1355:9:0",
+                          "src": "1301:9:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_User_$13_storage",
                             "typeString": "struct Hydrochain.User storage ref"
@@ -2125,7 +2125,7 @@
                         "memberName": "userAddress",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 10,
-                        "src": "1355:21:0",
+                        "src": "1301:21:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -2142,7 +2142,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "1378:3:0",
+                          "src": "1324:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -2156,13 +2156,13 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1378:10:0",
+                        "src": "1324:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       },
-                      "src": "1355:33:0",
+                      "src": "1301:33:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -2171,11 +2171,11 @@
                     "falseBody": null,
                     "id": 174,
                     "nodeType": "IfStatement",
-                    "src": "1352:111:0",
+                    "src": "1298:108:0",
                     "trueBody": {
                       "id": 173,
                       "nodeType": "Block",
-                      "src": "1389:74:0",
+                      "src": "1335:71:0",
                       "statements": [
                         {
                           "expression": {
@@ -2192,7 +2192,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 147,
-                              "src": "1408:5:0",
+                              "src": "1353:5:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                                 "typeString": "struct Hydrochain.User memory"
@@ -2209,7 +2209,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 8,
-                                "src": "1414:5:0",
+                                "src": "1359:5:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                                   "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -2223,7 +2223,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 144,
-                                "src": "1420:2:0",
+                                "src": "1365:2:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -2234,13 +2234,13 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "1414:9:0",
+                              "src": "1359:9:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_User_$13_storage",
                                 "typeString": "struct Hydrochain.User storage ref"
                               }
                             },
-                            "src": "1408:15:0",
+                            "src": "1353:15:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                               "typeString": "struct Hydrochain.User memory"
@@ -2248,12 +2248,12 @@
                           },
                           "id": 171,
                           "nodeType": "ExpressionStatement",
-                          "src": "1408:15:0"
+                          "src": "1353:15:0"
                         },
                         {
                           "id": 172,
                           "nodeType": "Break",
-                          "src": "1442:5:0"
+                          "src": "1386:5:0"
                         }
                       ]
                     }
@@ -2276,7 +2276,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 144,
-                      "src": "1322:2:0",
+                      "src": "1269:2:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2291,13 +2291,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 4,
-                      "src": "1326:6:0",
+                      "src": "1273:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1322:10:0",
+                    "src": "1269:10:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2319,7 +2319,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 144,
-                        "src": "1317:2:0",
+                        "src": "1264:2:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2337,7 +2337,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1320:1:0",
+                        "src": "1267:1:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_1_by_1",
@@ -2345,7 +2345,7 @@
                         },
                         "value": "1"
                       },
-                      "src": "1317:4:0",
+                      "src": "1264:4:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2353,7 +2353,7 @@
                     },
                     "id": 152,
                     "nodeType": "ExpressionStatement",
-                    "src": "1317:4:0"
+                    "src": "1264:4:0"
                   },
                   "loopExpression": {
                     "expression": {
@@ -2366,7 +2366,7 @@
                       "nodeType": "UnaryOperation",
                       "operator": "++",
                       "prefix": true,
-                      "src": "1333:4:0",
+                      "src": "1280:4:0",
                       "subExpression": {
                         "argumentTypes": null,
                         "id": 156,
@@ -2374,7 +2374,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 144,
-                        "src": "1335:2:0",
+                        "src": "1282:2:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2387,10 +2387,10 @@
                     },
                     "id": 158,
                     "nodeType": "ExpressionStatement",
-                    "src": "1333:4:0"
+                    "src": "1280:4:0"
                   },
                   "nodeType": "ForStatement",
-                  "src": "1313:150:0"
+                  "src": "1260:146:0"
                 },
                 {
                   "expression": {
@@ -2409,7 +2409,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 147,
-                        "src": "1473:5:0",
+                        "src": "1415:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                           "typeString": "struct Hydrochain.User memory"
@@ -2423,7 +2423,7 @@
                       "memberName": "units",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 12,
-                      "src": "1473:11:0",
+                      "src": "1415:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2441,7 +2441,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1485:1:0",
+                      "src": "1427:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_0_by_1",
@@ -2449,7 +2449,7 @@
                       },
                       "value": "0"
                     },
-                    "src": "1473:13:0",
+                    "src": "1415:13:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2457,7 +2457,7 @@
                   },
                   "id": 181,
                   "nodeType": "ExpressionStatement",
-                  "src": "1473:13:0"
+                  "src": "1415:13:0"
                 },
                 {
                   "expression": {
@@ -2476,7 +2476,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 8,
-                        "src": "1497:5:0",
+                        "src": "1438:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                           "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -2490,7 +2490,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 144,
-                        "src": "1503:2:0",
+                        "src": "1444:2:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2501,7 +2501,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1497:9:0",
+                      "src": "1438:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_storage",
                         "typeString": "struct Hydrochain.User storage ref"
@@ -2516,13 +2516,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 147,
-                      "src": "1509:5:0",
+                      "src": "1450:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                         "typeString": "struct Hydrochain.User memory"
                       }
                     },
-                    "src": "1497:17:0",
+                    "src": "1438:17:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_User_$13_storage",
                       "typeString": "struct Hydrochain.User storage ref"
@@ -2530,7 +2530,7 @@
                   },
                   "id": 187,
                   "nodeType": "ExpressionStatement",
-                  "src": "1497:17:0"
+                  "src": "1438:17:0"
                 },
                 {
                   "eventCall": {
@@ -2543,7 +2543,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 129,
-                        "src": "1539:9:0",
+                        "src": "1479:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -2558,7 +2558,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "1549:3:0",
+                          "src": "1489:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -2572,7 +2572,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1549:10:0",
+                        "src": "1489:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -2587,7 +2587,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "1560:3:0",
+                          "src": "1500:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -2601,7 +2601,7 @@
                         "memberName": "value",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1560:9:0",
+                        "src": "1500:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2628,7 +2628,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 35,
-                      "src": "1530:8:0",
+                      "src": "1470:8:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_payable_$_t_address_payable_$_t_uint256_$returns$__$",
                         "typeString": "function (address payable,address payable,uint256)"
@@ -2642,7 +2642,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1530:40:0",
+                    "src": "1470:40:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -2650,7 +2650,7 @@
                   },
                   "id": 195,
                   "nodeType": "EmitStatement",
-                  "src": "1525:45:0"
+                  "src": "1465:45:0"
                 }
               ]
             },
@@ -2665,29 +2665,29 @@
               "id": 126,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1130:2:0"
+              "src": "1082:2:0"
             },
             "returnParameters": {
               "id": 127,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1148:0:0"
+              "src": "1100:0:0"
             },
             "scope": 198,
-            "src": "1114:464:0",
+            "src": "1066:451:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 199,
-        "src": "27:1554:0"
+        "src": "25:1494:0"
       }
     ],
-    "src": "0:1585:0"
+    "src": "0:1520:0"
   },
   "legacyAST": {
-    "absolutePath": "/E/CS/Hackathons/Devfolio online/HackInOut/new/Hydro-chain/Hydro-chain DApp/src/contracts/Hydrochain.sol",
+    "absolutePath": "/home/alan/Projects/blockchain/Hydro/src/contracts/Hydrochain.sol",
     "exportedSymbols": {
       "Hydrochain": [
         198
@@ -2726,7 +2726,7 @@
             "name": "uCount",
             "nodeType": "VariableDeclaration",
             "scope": 198,
-            "src": "54:20:0",
+            "src": "51:20:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2737,7 +2737,7 @@
               "id": 2,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "54:4:0",
+              "src": "51:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -2753,7 +2753,7 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "73:1:0",
+              "src": "70:1:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
@@ -2769,7 +2769,7 @@
             "name": "users",
             "nodeType": "VariableDeclaration",
             "scope": 198,
-            "src": "81:34:0",
+            "src": "77:34:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2782,14 +2782,14 @@
                 "id": 5,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "89:4:0",
+                "src": "85:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "81:21:0",
+              "src": "77:21:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                 "typeString": "mapping(uint256 => struct Hydrochain.User)"
@@ -2800,7 +2800,7 @@
                 "name": "User",
                 "nodeType": "UserDefinedTypeName",
                 "referencedDeclaration": 13,
-                "src": "97:4:0",
+                "src": "93:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_User_$13_storage_ptr",
                   "typeString": "struct Hydrochain.User"
@@ -2820,7 +2820,7 @@
                 "name": "userAddress",
                 "nodeType": "VariableDeclaration",
                 "scope": 13,
-                "src": "147:27:0",
+                "src": "140:27:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2831,7 +2831,7 @@
                   "id": 9,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "147:15:0",
+                  "src": "140:15:0",
                   "stateMutability": "payable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address_payable",
@@ -2847,7 +2847,7 @@
                 "name": "units",
                 "nodeType": "VariableDeclaration",
                 "scope": 13,
-                "src": "185:10:0",
+                "src": "177:10:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2858,7 +2858,7 @@
                   "id": 11,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "185:4:0",
+                  "src": "177:4:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -2871,7 +2871,7 @@
             "name": "User",
             "nodeType": "StructDefinition",
             "scope": 198,
-            "src": "124:79:0",
+            "src": "118:76:0",
             "visibility": "public"
           },
           {
@@ -2891,7 +2891,7 @@
                   "name": "id",
                   "nodeType": "VariableDeclaration",
                   "scope": 21,
-                  "src": "243:7:0",
+                  "src": "231:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2902,7 +2902,7 @@
                     "id": 14,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "243:4:0",
+                    "src": "231:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2918,7 +2918,7 @@
                   "name": "userAddress",
                   "nodeType": "VariableDeclaration",
                   "scope": 21,
-                  "src": "261:27:0",
+                  "src": "248:27:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2929,7 +2929,7 @@
                     "id": 16,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "261:15:0",
+                    "src": "248:15:0",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -2946,7 +2946,7 @@
                   "name": "units",
                   "nodeType": "VariableDeclaration",
                   "scope": 21,
-                  "src": "300:10:0",
+                  "src": "286:10:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2957,7 +2957,7 @@
                     "id": 18,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "300:4:0",
+                    "src": "286:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2967,9 +2967,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "232:85:0"
+              "src": "221:81:0"
             },
-            "src": "211:107:0"
+            "src": "200:103:0"
           },
           {
             "anonymous": false,
@@ -2988,7 +2988,7 @@
                   "name": "userAddress",
                   "nodeType": "VariableDeclaration",
                   "scope": 27,
-                  "src": "354:27:0",
+                  "src": "336:27:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2999,7 +2999,7 @@
                     "id": 22,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "354:15:0",
+                    "src": "336:15:0",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -3016,7 +3016,7 @@
                   "name": "units",
                   "nodeType": "VariableDeclaration",
                   "scope": 27,
-                  "src": "393:10:0",
+                  "src": "374:10:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3027,7 +3027,7 @@
                     "id": 24,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "393:4:0",
+                    "src": "374:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3037,9 +3037,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "343:67:0"
+              "src": "326:64:0"
             },
-            "src": "326:85:0"
+            "src": "309:82:0"
           },
           {
             "anonymous": false,
@@ -3058,7 +3058,7 @@
                   "name": "deployer",
                   "nodeType": "VariableDeclaration",
                   "scope": 35,
-                  "src": "445:24:0",
+                  "src": "422:24:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3069,7 +3069,7 @@
                     "id": 28,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "445:15:0",
+                    "src": "422:15:0",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -3086,7 +3086,7 @@
                   "name": "user",
                   "nodeType": "VariableDeclaration",
                   "scope": 35,
-                  "src": "480:20:0",
+                  "src": "456:20:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3097,7 +3097,7 @@
                     "id": 30,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "480:15:0",
+                    "src": "456:15:0",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -3114,7 +3114,7 @@
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
                   "scope": 35,
-                  "src": "511:11:0",
+                  "src": "486:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3125,7 +3125,7 @@
                     "id": 32,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "511:4:0",
+                    "src": "486:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3135,15 +3135,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "434:95:0"
+              "src": "412:91:0"
             },
-            "src": "419:111:0"
+            "src": "397:107:0"
           },
           {
             "body": {
               "id": 58,
               "nodeType": "Block",
-              "src": "571:127:0",
+              "src": "543:123:0",
               "statements": [
                 {
                   "expression": {
@@ -3156,7 +3156,7 @@
                     "nodeType": "UnaryOperation",
                     "operator": "++",
                     "prefix": false,
-                    "src": "582:8:0",
+                    "src": "553:8:0",
                     "subExpression": {
                       "argumentTypes": null,
                       "id": 38,
@@ -3164,7 +3164,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 4,
-                      "src": "582:6:0",
+                      "src": "553:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -3177,7 +3177,7 @@
                   },
                   "id": 40,
                   "nodeType": "ExpressionStatement",
-                  "src": "582:8:0"
+                  "src": "553:8:0"
                 },
                 {
                   "expression": {
@@ -3196,7 +3196,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 8,
-                        "src": "601:5:0",
+                        "src": "571:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                           "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -3210,7 +3210,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4,
-                        "src": "607:6:0",
+                        "src": "577:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3221,7 +3221,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "601:13:0",
+                      "src": "571:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_storage",
                         "typeString": "struct Hydrochain.User storage ref"
@@ -3241,7 +3241,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 270,
-                            "src": "622:3:0",
+                            "src": "592:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
@@ -3255,7 +3255,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "622:10:0",
+                          "src": "592:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
@@ -3271,7 +3271,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "634:1:0",
+                          "src": "604:1:0",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_0_by_1",
@@ -3296,7 +3296,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 13,
-                        "src": "617:4:0",
+                        "src": "587:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_struct$_User_$13_storage_ptr_$",
                           "typeString": "type(struct Hydrochain.User storage pointer)"
@@ -3310,13 +3310,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "617:19:0",
+                      "src": "587:19:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_memory",
                         "typeString": "struct Hydrochain.User memory"
                       }
                     },
-                    "src": "601:35:0",
+                    "src": "571:35:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_User_$13_storage",
                       "typeString": "struct Hydrochain.User storage ref"
@@ -3324,7 +3324,7 @@
                   },
                   "id": 50,
                   "nodeType": "ExpressionStatement",
-                  "src": "601:35:0"
+                  "src": "571:35:0"
                 },
                 {
                   "eventCall": {
@@ -3337,7 +3337,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4,
-                        "src": "668:6:0",
+                        "src": "637:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3352,7 +3352,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "676:3:0",
+                          "src": "645:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -3366,7 +3366,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "676:10:0",
+                        "src": "645:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -3382,7 +3382,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "688:1:0",
+                        "src": "657:1:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_0_by_1",
@@ -3411,7 +3411,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 21,
-                      "src": "652:15:0",
+                      "src": "621:15:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_address_payable_$_t_uint256_$returns$__$",
                         "typeString": "function (uint256,address payable,uint256)"
@@ -3425,7 +3425,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "652:38:0",
+                    "src": "621:38:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -3433,7 +3433,7 @@
                   },
                   "id": 57,
                   "nodeType": "EmitStatement",
-                  "src": "647:43:0"
+                  "src": "616:43:0"
                 }
               ]
             },
@@ -3448,16 +3448,16 @@
               "id": 36,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "561:2:0"
+              "src": "533:2:0"
             },
             "returnParameters": {
               "id": 37,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "571:0:0"
+              "src": "543:0:0"
             },
             "scope": 198,
-            "src": "538:160:0",
+            "src": "510:156:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -3466,7 +3466,7 @@
             "body": {
               "id": 124,
               "nodeType": "Block",
-              "src": "743:363:0",
+              "src": "709:351:0",
               "statements": [
                 {
                   "expression": {
@@ -3490,7 +3490,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 61,
-                          "src": "762:6:0",
+                          "src": "727:6:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -3508,7 +3508,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "772:1:0",
+                          "src": "737:1:0",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_0_by_1",
@@ -3516,7 +3516,7 @@
                           },
                           "value": "0"
                         },
-                        "src": "762:11:0",
+                        "src": "727:11:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -3538,7 +3538,7 @@
                         274
                       ],
                       "referencedDeclaration": 273,
-                      "src": "754:7:0",
+                      "src": "719:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
@@ -3552,7 +3552,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "754:20:0",
+                    "src": "719:20:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -3560,7 +3560,7 @@
                   },
                   "id": 69,
                   "nodeType": "ExpressionStatement",
-                  "src": "754:20:0"
+                  "src": "719:20:0"
                 },
                 {
                   "assignments": [
@@ -3573,7 +3573,7 @@
                       "name": "_i",
                       "nodeType": "VariableDeclaration",
                       "scope": 124,
-                      "src": "785:7:0",
+                      "src": "749:7:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -3584,7 +3584,7 @@
                         "id": 70,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
-                        "src": "785:4:0",
+                        "src": "749:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3597,7 +3597,7 @@
                   "id": 72,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "785:7:0"
+                  "src": "749:7:0"
                 },
                 {
                   "assignments": [
@@ -3610,7 +3610,7 @@
                       "name": "_user",
                       "nodeType": "VariableDeclaration",
                       "scope": 124,
-                      "src": "803:17:0",
+                      "src": "766:17:0",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
@@ -3623,7 +3623,7 @@
                         "name": "User",
                         "nodeType": "UserDefinedTypeName",
                         "referencedDeclaration": 13,
-                        "src": "803:4:0",
+                        "src": "766:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_User_$13_storage_ptr",
                           "typeString": "struct Hydrochain.User"
@@ -3636,7 +3636,7 @@
                   "id": 75,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "803:17:0"
+                  "src": "766:17:0"
                 },
                 {
                   "body": {
@@ -3662,7 +3662,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 8,
-                            "src": "873:5:0",
+                            "src": "834:5:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                               "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -3676,7 +3676,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 71,
-                            "src": "879:2:0",
+                            "src": "840:2:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -3687,7 +3687,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "nodeType": "IndexAccess",
-                          "src": "873:9:0",
+                          "src": "834:9:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_User_$13_storage",
                             "typeString": "struct Hydrochain.User storage ref"
@@ -3701,7 +3701,7 @@
                         "memberName": "userAddress",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 10,
-                        "src": "873:21:0",
+                        "src": "834:21:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -3718,7 +3718,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "896:3:0",
+                          "src": "857:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -3732,13 +3732,13 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "896:10:0",
+                        "src": "857:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       },
-                      "src": "873:33:0",
+                      "src": "834:33:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -3747,11 +3747,11 @@
                     "falseBody": null,
                     "id": 101,
                     "nodeType": "IfStatement",
-                    "src": "870:111:0",
+                    "src": "831:108:0",
                     "trueBody": {
                       "id": 100,
                       "nodeType": "Block",
-                      "src": "907:74:0",
+                      "src": "868:71:0",
                       "statements": [
                         {
                           "expression": {
@@ -3768,7 +3768,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 74,
-                              "src": "926:5:0",
+                              "src": "886:5:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                                 "typeString": "struct Hydrochain.User memory"
@@ -3785,7 +3785,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 8,
-                                "src": "932:5:0",
+                                "src": "892:5:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                                   "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -3799,7 +3799,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 71,
-                                "src": "938:2:0",
+                                "src": "898:2:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -3810,13 +3810,13 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "932:9:0",
+                              "src": "892:9:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_User_$13_storage",
                                 "typeString": "struct Hydrochain.User storage ref"
                               }
                             },
-                            "src": "926:15:0",
+                            "src": "886:15:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                               "typeString": "struct Hydrochain.User memory"
@@ -3824,12 +3824,12 @@
                           },
                           "id": 98,
                           "nodeType": "ExpressionStatement",
-                          "src": "926:15:0"
+                          "src": "886:15:0"
                         },
                         {
                           "id": 99,
                           "nodeType": "Break",
-                          "src": "960:5:0"
+                          "src": "919:5:0"
                         }
                       ]
                     }
@@ -3852,7 +3852,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 71,
-                      "src": "840:2:0",
+                      "src": "802:2:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -3867,13 +3867,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 4,
-                      "src": "844:6:0",
+                      "src": "806:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "840:10:0",
+                    "src": "802:10:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -3895,7 +3895,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 71,
-                        "src": "835:2:0",
+                        "src": "797:2:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3913,7 +3913,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "838:1:0",
+                        "src": "800:1:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_1_by_1",
@@ -3921,7 +3921,7 @@
                         },
                         "value": "1"
                       },
-                      "src": "835:4:0",
+                      "src": "797:4:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -3929,7 +3929,7 @@
                     },
                     "id": 79,
                     "nodeType": "ExpressionStatement",
-                    "src": "835:4:0"
+                    "src": "797:4:0"
                   },
                   "loopExpression": {
                     "expression": {
@@ -3942,7 +3942,7 @@
                       "nodeType": "UnaryOperation",
                       "operator": "++",
                       "prefix": true,
-                      "src": "851:4:0",
+                      "src": "813:4:0",
                       "subExpression": {
                         "argumentTypes": null,
                         "id": 83,
@@ -3950,7 +3950,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 71,
-                        "src": "853:2:0",
+                        "src": "815:2:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3963,10 +3963,10 @@
                     },
                     "id": 85,
                     "nodeType": "ExpressionStatement",
-                    "src": "851:4:0"
+                    "src": "813:4:0"
                   },
                   "nodeType": "ForStatement",
-                  "src": "831:150:0"
+                  "src": "793:146:0"
                 },
                 {
                   "expression": {
@@ -3985,7 +3985,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 74,
-                        "src": "991:5:0",
+                        "src": "948:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                           "typeString": "struct Hydrochain.User memory"
@@ -3999,7 +3999,7 @@
                       "memberName": "units",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 12,
-                      "src": "991:11:0",
+                      "src": "948:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -4027,7 +4027,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 74,
-                          "src": "1005:5:0",
+                          "src": "962:5:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                             "typeString": "struct Hydrochain.User memory"
@@ -4041,7 +4041,7 @@
                         "memberName": "units",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 12,
-                        "src": "1005:11:0",
+                        "src": "962:11:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -4056,19 +4056,19 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 61,
-                        "src": "1019:6:0",
+                        "src": "976:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         }
                       },
-                      "src": "1005:20:0",
+                      "src": "962:20:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "991:34:0",
+                    "src": "948:34:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4076,7 +4076,7 @@
                   },
                   "id": 111,
                   "nodeType": "ExpressionStatement",
-                  "src": "991:34:0"
+                  "src": "948:34:0"
                 },
                 {
                   "expression": {
@@ -4095,7 +4095,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 8,
-                        "src": "1036:5:0",
+                        "src": "992:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                           "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -4109,7 +4109,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 71,
-                        "src": "1042:2:0",
+                        "src": "998:2:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -4120,7 +4120,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1036:9:0",
+                      "src": "992:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_storage",
                         "typeString": "struct Hydrochain.User storage ref"
@@ -4135,13 +4135,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 74,
-                      "src": "1048:5:0",
+                      "src": "1004:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                         "typeString": "struct Hydrochain.User memory"
                       }
                     },
-                    "src": "1036:17:0",
+                    "src": "992:17:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_User_$13_storage",
                       "typeString": "struct Hydrochain.User storage ref"
@@ -4149,7 +4149,7 @@
                   },
                   "id": 117,
                   "nodeType": "ExpressionStatement",
-                  "src": "1036:17:0"
+                  "src": "992:17:0"
                 },
                 {
                   "eventCall": {
@@ -4164,7 +4164,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "1080:3:0",
+                          "src": "1035:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -4178,7 +4178,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1080:10:0",
+                        "src": "1035:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -4191,7 +4191,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 61,
-                        "src": "1091:6:0",
+                        "src": "1046:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -4214,7 +4214,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 27,
-                      "src": "1069:10:0",
+                      "src": "1024:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_payable_$_t_uint256_$returns$__$",
                         "typeString": "function (address payable,uint256)"
@@ -4228,7 +4228,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1069:29:0",
+                    "src": "1024:29:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -4236,7 +4236,7 @@
                   },
                   "id": 123,
                   "nodeType": "EmitStatement",
-                  "src": "1064:34:0"
+                  "src": "1019:34:0"
                 }
               ]
             },
@@ -4257,7 +4257,7 @@
                   "name": "_units",
                   "nodeType": "VariableDeclaration",
                   "scope": 125,
-                  "src": "723:11:0",
+                  "src": "689:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4268,7 +4268,7 @@
                     "id": 60,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "723:4:0",
+                    "src": "689:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4278,16 +4278,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "722:13:0"
+              "src": "688:13:0"
             },
             "returnParameters": {
               "id": 63,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "743:0:0"
+              "src": "709:0:0"
             },
             "scope": 198,
-            "src": "706:400:0",
+            "src": "672:388:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -4296,7 +4296,7 @@
             "body": {
               "id": 196,
               "nodeType": "Block",
-              "src": "1148:430:0",
+              "src": "1100:417:0",
               "statements": [
                 {
                   "assignments": [
@@ -4309,7 +4309,7 @@
                       "name": "_deployer",
                       "nodeType": "VariableDeclaration",
                       "scope": 196,
-                      "src": "1159:25:0",
+                      "src": "1110:25:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -4320,7 +4320,7 @@
                         "id": 128,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1159:15:0",
+                        "src": "1110:15:0",
                         "stateMutability": "payable",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
@@ -4343,7 +4343,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 8,
-                        "src": "1187:5:0",
+                        "src": "1138:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                           "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -4360,7 +4360,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1193:1:0",
+                        "src": "1144:1:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_0_by_1",
@@ -4373,7 +4373,7 @@
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "1187:8:0",
+                      "src": "1138:8:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_storage",
                         "typeString": "struct Hydrochain.User storage ref"
@@ -4387,14 +4387,14 @@
                     "memberName": "userAddress",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": 10,
-                    "src": "1187:20:0",
+                    "src": "1138:20:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
                       "typeString": "address payable"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1159:48:0"
+                  "src": "1110:48:0"
                 },
                 {
                   "expression": {
@@ -4409,7 +4409,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "1246:3:0",
+                          "src": "1196:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -4423,7 +4423,7 @@
                         "memberName": "value",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1246:9:0",
+                        "src": "1196:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -4447,7 +4447,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 129,
-                            "src": "1226:9:0",
+                            "src": "1176:9:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address_payable",
                               "typeString": "address payable"
@@ -4467,7 +4467,7 @@
                           "isPure": true,
                           "lValueRequested": false,
                           "nodeType": "ElementaryTypeNameExpression",
-                          "src": "1218:7:0",
+                          "src": "1168:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_address_$",
                             "typeString": "type(address)"
@@ -4482,7 +4482,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1218:18:0",
+                        "src": "1168:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -4496,7 +4496,7 @@
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1218:27:0",
+                      "src": "1168:27:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
@@ -4510,7 +4510,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1218:38:0",
+                    "src": "1168:38:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -4518,7 +4518,7 @@
                   },
                   "id": 142,
                   "nodeType": "ExpressionStatement",
-                  "src": "1218:38:0"
+                  "src": "1168:38:0"
                 },
                 {
                   "assignments": [
@@ -4531,7 +4531,7 @@
                       "name": "_i",
                       "nodeType": "VariableDeclaration",
                       "scope": 196,
-                      "src": "1267:7:0",
+                      "src": "1216:7:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -4542,7 +4542,7 @@
                         "id": 143,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1267:4:0",
+                        "src": "1216:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -4555,7 +4555,7 @@
                   "id": 145,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1267:7:0"
+                  "src": "1216:7:0"
                 },
                 {
                   "assignments": [
@@ -4568,7 +4568,7 @@
                       "name": "_user",
                       "nodeType": "VariableDeclaration",
                       "scope": 196,
-                      "src": "1285:17:0",
+                      "src": "1233:17:0",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
@@ -4581,7 +4581,7 @@
                         "name": "User",
                         "nodeType": "UserDefinedTypeName",
                         "referencedDeclaration": 13,
-                        "src": "1285:4:0",
+                        "src": "1233:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_User_$13_storage_ptr",
                           "typeString": "struct Hydrochain.User"
@@ -4594,7 +4594,7 @@
                   "id": 148,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1285:17:0"
+                  "src": "1233:17:0"
                 },
                 {
                   "body": {
@@ -4620,7 +4620,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 8,
-                            "src": "1355:5:0",
+                            "src": "1301:5:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                               "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -4634,7 +4634,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 144,
-                            "src": "1361:2:0",
+                            "src": "1307:2:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -4645,7 +4645,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "nodeType": "IndexAccess",
-                          "src": "1355:9:0",
+                          "src": "1301:9:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_User_$13_storage",
                             "typeString": "struct Hydrochain.User storage ref"
@@ -4659,7 +4659,7 @@
                         "memberName": "userAddress",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 10,
-                        "src": "1355:21:0",
+                        "src": "1301:21:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -4676,7 +4676,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "1378:3:0",
+                          "src": "1324:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -4690,13 +4690,13 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1378:10:0",
+                        "src": "1324:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       },
-                      "src": "1355:33:0",
+                      "src": "1301:33:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -4705,11 +4705,11 @@
                     "falseBody": null,
                     "id": 174,
                     "nodeType": "IfStatement",
-                    "src": "1352:111:0",
+                    "src": "1298:108:0",
                     "trueBody": {
                       "id": 173,
                       "nodeType": "Block",
-                      "src": "1389:74:0",
+                      "src": "1335:71:0",
                       "statements": [
                         {
                           "expression": {
@@ -4726,7 +4726,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 147,
-                              "src": "1408:5:0",
+                              "src": "1353:5:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                                 "typeString": "struct Hydrochain.User memory"
@@ -4743,7 +4743,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 8,
-                                "src": "1414:5:0",
+                                "src": "1359:5:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                                   "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -4757,7 +4757,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 144,
-                                "src": "1420:2:0",
+                                "src": "1365:2:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -4768,13 +4768,13 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "1414:9:0",
+                              "src": "1359:9:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_User_$13_storage",
                                 "typeString": "struct Hydrochain.User storage ref"
                               }
                             },
-                            "src": "1408:15:0",
+                            "src": "1353:15:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                               "typeString": "struct Hydrochain.User memory"
@@ -4782,12 +4782,12 @@
                           },
                           "id": 171,
                           "nodeType": "ExpressionStatement",
-                          "src": "1408:15:0"
+                          "src": "1353:15:0"
                         },
                         {
                           "id": 172,
                           "nodeType": "Break",
-                          "src": "1442:5:0"
+                          "src": "1386:5:0"
                         }
                       ]
                     }
@@ -4810,7 +4810,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 144,
-                      "src": "1322:2:0",
+                      "src": "1269:2:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -4825,13 +4825,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 4,
-                      "src": "1326:6:0",
+                      "src": "1273:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1322:10:0",
+                    "src": "1269:10:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -4853,7 +4853,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 144,
-                        "src": "1317:2:0",
+                        "src": "1264:2:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -4871,7 +4871,7 @@
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1320:1:0",
+                        "src": "1267:1:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_1_by_1",
@@ -4879,7 +4879,7 @@
                         },
                         "value": "1"
                       },
-                      "src": "1317:4:0",
+                      "src": "1264:4:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -4887,7 +4887,7 @@
                     },
                     "id": 152,
                     "nodeType": "ExpressionStatement",
-                    "src": "1317:4:0"
+                    "src": "1264:4:0"
                   },
                   "loopExpression": {
                     "expression": {
@@ -4900,7 +4900,7 @@
                       "nodeType": "UnaryOperation",
                       "operator": "++",
                       "prefix": true,
-                      "src": "1333:4:0",
+                      "src": "1280:4:0",
                       "subExpression": {
                         "argumentTypes": null,
                         "id": 156,
@@ -4908,7 +4908,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 144,
-                        "src": "1335:2:0",
+                        "src": "1282:2:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -4921,10 +4921,10 @@
                     },
                     "id": 158,
                     "nodeType": "ExpressionStatement",
-                    "src": "1333:4:0"
+                    "src": "1280:4:0"
                   },
                   "nodeType": "ForStatement",
-                  "src": "1313:150:0"
+                  "src": "1260:146:0"
                 },
                 {
                   "expression": {
@@ -4943,7 +4943,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 147,
-                        "src": "1473:5:0",
+                        "src": "1415:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                           "typeString": "struct Hydrochain.User memory"
@@ -4957,7 +4957,7 @@
                       "memberName": "units",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 12,
-                      "src": "1473:11:0",
+                      "src": "1415:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -4975,7 +4975,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1485:1:0",
+                      "src": "1427:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_0_by_1",
@@ -4983,7 +4983,7 @@
                       },
                       "value": "0"
                     },
-                    "src": "1473:13:0",
+                    "src": "1415:13:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4991,7 +4991,7 @@
                   },
                   "id": 181,
                   "nodeType": "ExpressionStatement",
-                  "src": "1473:13:0"
+                  "src": "1415:13:0"
                 },
                 {
                   "expression": {
@@ -5010,7 +5010,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 8,
-                        "src": "1497:5:0",
+                        "src": "1438:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_User_$13_storage_$",
                           "typeString": "mapping(uint256 => struct Hydrochain.User storage ref)"
@@ -5024,7 +5024,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 144,
-                        "src": "1503:2:0",
+                        "src": "1444:2:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -5035,7 +5035,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1497:9:0",
+                      "src": "1438:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_storage",
                         "typeString": "struct Hydrochain.User storage ref"
@@ -5050,13 +5050,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 147,
-                      "src": "1509:5:0",
+                      "src": "1450:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_User_$13_memory_ptr",
                         "typeString": "struct Hydrochain.User memory"
                       }
                     },
-                    "src": "1497:17:0",
+                    "src": "1438:17:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_User_$13_storage",
                       "typeString": "struct Hydrochain.User storage ref"
@@ -5064,7 +5064,7 @@
                   },
                   "id": 187,
                   "nodeType": "ExpressionStatement",
-                  "src": "1497:17:0"
+                  "src": "1438:17:0"
                 },
                 {
                   "eventCall": {
@@ -5077,7 +5077,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 129,
-                        "src": "1539:9:0",
+                        "src": "1479:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -5092,7 +5092,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "1549:3:0",
+                          "src": "1489:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -5106,7 +5106,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1549:10:0",
+                        "src": "1489:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -5121,7 +5121,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 270,
-                          "src": "1560:3:0",
+                          "src": "1500:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -5135,7 +5135,7 @@
                         "memberName": "value",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1560:9:0",
+                        "src": "1500:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -5162,7 +5162,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 35,
-                      "src": "1530:8:0",
+                      "src": "1470:8:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_payable_$_t_address_payable_$_t_uint256_$returns$__$",
                         "typeString": "function (address payable,address payable,uint256)"
@@ -5176,7 +5176,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1530:40:0",
+                    "src": "1470:40:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -5184,7 +5184,7 @@
                   },
                   "id": 195,
                   "nodeType": "EmitStatement",
-                  "src": "1525:45:0"
+                  "src": "1465:45:0"
                 }
               ]
             },
@@ -5199,33 +5199,33 @@
               "id": 126,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1130:2:0"
+              "src": "1082:2:0"
             },
             "returnParameters": {
               "id": 127,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1148:0:0"
+              "src": "1100:0:0"
             },
             "scope": 198,
-            "src": "1114:464:0",
+            "src": "1066:451:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 199,
-        "src": "27:1554:0"
+        "src": "25:1494:0"
       }
     ],
-    "src": "0:1585:0"
+    "src": "0:1520:0"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {
-    "1607880407917": {
+    "1607313928119": {
       "events": {
         "0xc217499589f3ec1d5b2891594c80d8e6493c0ea24a503908b460cc5a806e9f69": {
           "anonymous": false,
@@ -5298,12 +5298,12 @@
         }
       },
       "links": {},
-      "address": "0xEF4990FE0dE45f7E7121736b847F60536a83cF34",
-      "transactionHash": "0x1550038aa73cf9ec92d994d62f6cbe6932f63308028b53fe698dd5cce027ac98"
+      "address": "0xf7E7829288433CBA4Fc99A433202311507F8F023",
+      "transactionHash": "0x0bb9d8762b6af240a497a412ef9f7db4b3de0dad92ae586df9c85714d4bce858"
     }
   },
   "schemaVersion": "3.2.0",
-  "updatedAt": "2020-12-13T17:28:47.357Z",
+  "updatedAt": "2020-12-07T04:05:43.846Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
