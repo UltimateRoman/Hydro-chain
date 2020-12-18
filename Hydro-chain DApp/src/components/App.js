@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import home from './Home';
-import bill from './Components/bill';
+import Main from './Main';
 import Web3 from 'web3';
 import Hydrochain from '../abis/Hydrochain.json';
 import Footer from './Components/Footer';
@@ -103,19 +103,19 @@ class App extends Component {
         <Router>
           <Route exact path="/" component={home} />
           <Route exact path="/dashboard" render={props => (
-            <React.Fragment>
-              { this.state.loading
-              ? <center><br/><br/><br/><br/><br/><br/><div class="loader"></div></center>
-              : <bill
-                account={this.state.account}
-                users={this.state.users}
-                initializeUser={this.initializeUser}
-                addUnit={this.addUnit}
-                payBill={this.payBill}
-              />
-              }
-            </React.Fragment>
-          )} />      
+          <React.Fragment>
+            { this.state.loading
+            ? <center><br/><br/><br/><br/><br/><br/><div class="loader"></div></center>
+            : <Main
+              account={this.state.account}
+              users={this.state.users}
+              initializeUser={this.initializeUser}
+              addUnit={this.addUnit}
+              payBill={this.payBill}
+            />
+            }
+          </React.Fragment>
+          )}  />
           <Footer />
         </Router>
       </div>

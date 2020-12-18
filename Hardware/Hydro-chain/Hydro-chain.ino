@@ -1,18 +1,20 @@
 #include<ESP8266WiFi.h>
 #include<ESP8266WebServer.h>
 #include<string.h>
-#include<ArduinoJson.h>
 
 #define pin_led 16
 #define trig D5
 #define echo D3
+#define radius 10
 
 ESP8266WebServer server(80);
 char* ssid = "Your WiFi SSID";
 char* pass = "Your WiFi password";
 
 long duration;
-int distance;
+int distance1;
+int distance=0;
+float volume=0;
 
 void setup() {
   pinMode(pin_led, OUTPUT);
@@ -38,13 +40,20 @@ void loop() {
   delayMicroseconds(10);
   digitalWrite(trig, LOW);
   duration = pulseIn(echo, HIGH);
-  distance= duration*0.034/2;
+  distance1 = duration*0.034/2;
+  if(distance) {
+    if(distance1 > distance) {
+      Serial.println(distance1);
+      volume += ((distance1-distance)*3.1415*radius*radius)/1000;
+    }
+  }
+  distance = distance1;
   digitalWrite(pin_led,!digitalRead(pin_led));
   delay(1000);
 }
 
 void ret_value() {
-  String m = String(distance);
+  String m = String(volume);
   Serial.println("I'm returning the value");
   server.sendHeader("Access-Control-Allow-Origin","*");
   server.send(200, "text/plain", m);
