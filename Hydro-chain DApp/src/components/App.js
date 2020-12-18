@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
-import $ from 'jquery';
 import './App.css';
+import home from './Home';
 import bill from './Components/bill';
 import Web3 from 'web3';
-import Hydrochain from './abis/Hydrochain.json';
-import Header from './Components/Header';
+import Hydrochain from '../abis/Hydrochain.json';
 import Footer from './Components/Footer';
-import About from './Components/About';
-import Resume from './Components/Resume';
-import Contact from './Components/Contact';
-import Portfolio from './Components/Portfolio';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -102,40 +96,28 @@ class App extends Component {
     
   }
     
-  getResumeData(){
-    $.ajax({
-      url:'./resumeData.json',
-      dataType:'json',
-      cache: false,
-      success: function(data){
-        this.setState({resumeData: data});
-      }.bind(this),
-      error: function(xhr, status, err){
-        console.log(err);
-        alert(err);
-      }
-    });
-  }
-
-  componentDidMount(){
-    this.getResumeData();
-  }
 
   render() {
     return (
       <div className="App">
-         <Router>
-           <br /><br />
-         <Route exact path="/bill" component={bill} />
-         </Router>
-        <Header />
-       
-        <About />
-        <Resume />
-        <Portfolio />
-        <Contact />
-        <Footer />
-       
+        <Router>
+          <Route exact path="/" component={home} />
+          <Route exact path="/dashboard" render={props => (
+            <React.Fragment>
+              { this.state.loading
+              ? <center><br/><br/><br/><br/><br/><br/><div class="loader"></div></center>
+              : <bill
+                account={this.state.account}
+                users={this.state.users}
+                initializeUser={this.initializeUser}
+                addUnit={this.addUnit}
+                payBill={this.payBill}
+              />
+              }
+            </React.Fragment>
+          )} />      
+          <Footer />
+        </Router>
       </div>
     );
   }

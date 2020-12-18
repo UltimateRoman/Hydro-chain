@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Dropdowns from './dropdowns';
-class Resume extends Component {
+class Content extends Component {
 
   getRandomColor() {
     var letters = '0123456789ABCDEF';
@@ -60,4 +60,4 @@ class Resume extends Component {
   }
 }
 
-export default Resume;
+export default Content;

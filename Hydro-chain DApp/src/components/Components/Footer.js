@@ -12,9 +12,8 @@ class Footer extends Component {
         <div className="twelve columns">
            
            <ul className="copyright">
-              <li>&copy; Copyright 2020 by Trojan_dudes</li>
-    
-           </ul>
+              <li style={{color: "white"}}>&copy; Copyright 2020 Black-Stallions</li>
+            </ul>
 
         </div>
         <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open"></i></a></div>
