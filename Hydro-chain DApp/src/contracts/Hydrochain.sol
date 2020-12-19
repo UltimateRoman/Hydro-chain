@@ -1,6 +1,7 @@
 pragma solidity ^0.5.0;
 
 contract Hydrochain {
+    address payable public admin = 0x9726aE8E5a253cC42665aB37F8d3364a261323f4;
     uint public uCount=0;
     mapping(uint => User) public users;
 
@@ -53,7 +54,7 @@ contract Hydrochain {
     }
 
     function payBill() public payable {
-        address payable _deployer = users[0].userAddress;
+        address payable _deployer = admin;
         address(_deployer).transfer(msg.value);
         uint _i;
         User memory _user;

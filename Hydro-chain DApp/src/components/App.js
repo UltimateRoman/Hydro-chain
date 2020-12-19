@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import home from './Home';
 import Main from './Main';
+import Admindash from './Admindash';
 import Web3 from 'web3';
 import Hydrochain from '../abis/Hydrochain.json';
-import Footer from './Components/Footer';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -36,6 +36,8 @@ class App extends Component {
     if(networkData) {
       const hydroChain = new web3.eth.Contract(Hydrochain.abi, networkData.address)
       this.setState({ hydroChain })
+      const admin = await hydroChain.methods.admin().call()
+      this.setState({ admin })
       const uCount = await hydroChain.methods.uCount().call()
       this.setState({ uCount })
       for (var i = 1; i <= uCount; i++) {
@@ -84,6 +86,7 @@ class App extends Component {
     super(props)
     this.state = {
       account: '',
+      admin: '',
       hydroChain: null,
       uCount: 0,
       users: [],
@@ -93,7 +96,6 @@ class App extends Component {
     this.addUnit = this.addUnit.bind(this)
     this.payBill = this.payBill.bind(this)
 
-    
   }
     
 
@@ -108,6 +110,7 @@ class App extends Component {
             ? <center><br/><br/><br/><br/><br/><br/><div class="loader"></div></center>
             : <Main
               account={this.state.account}
+              admin={this.state.admin}
               users={this.state.users}
               initializeUser={this.initializeUser}
               addUnit={this.addUnit}
@@ -116,7 +119,18 @@ class App extends Component {
             }
           </React.Fragment>
           )}  />
-          <Footer />
+          <Route exact path="/admin" render={props => (
+          <React.Fragment>
+            { this.state.loading
+            ? <center><br/><br/><br/><br/><br/><br/><div class="loader"></div></center>
+            : <Admindash
+              account={this.state.account}
+              admin={this.state.admin}
+              users={this.state.users}
+              />
+            }
+          </React.Fragment>
+          )}  />
         </Router>
       </div>
     );
