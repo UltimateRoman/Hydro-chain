@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
-import bill from './Components/bill';
+import Button1 from '@material-ui/core/Button';
+import {Button} from 'react-bootstrap';
+import axios from 'axios';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+import EditIcon from '@material-ui/icons/Edit';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import NavigationIcon from '@material-ui/icons/Navigation';
+import IconButton from '@material-ui/core/IconButton';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
+import ChartsPage from './chart';
 class Main extends Component {
 
     constructor(props) {
@@ -16,7 +26,7 @@ class Main extends Component {
     async setBill(event) {
         axios.get('http://192.168.1.14/')
         .then(response => {
-            const val = await response.data
+            const val =  response.data
             this.setState({val})
         })
         this.props.addUnit(this.state.val)
@@ -35,8 +45,34 @@ class Main extends Component {
     render() {
         if (this.state.isuser) {
             return (
+                
                 <div className="container-fluid mt-5">
+                <row>
+                    <center>
+                        <Button1 variant="contained"><h3>REPORT</h3></Button1>&emsp;
+                        <Button1 variant="contained" color="primary">
+                         <h3>INTEGRATIONS</h3>   
+                        </Button1>&emsp;
+                        <Button1 variant="contained" color="secondary">
+                            <h3>CURRENT MONTH</h3>
+                        </Button1>&emsp;
+                        <Button1 variant="contained" color="primary">
+                            <h3>Delete user</h3>
+                        </Button1>&emsp;
+                        <Button1 variant="contained" color="seconday" href="#contained-buttons">
+                            <h3>LAST QUARTER</h3>
+                        </Button1>
+                        </center>
+                        &emsp;
+                        
+                        <IconButton color="primary">
+                            <ShoppingCartIcon />
+                        </IconButton>
+                        
+                        <center>
+                        
                     <div className="row">
+                        
                         <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '500px' }}>
                         <div className="content mr-auto ml-auto">
                         <p>&nbsp;</p>
@@ -56,6 +92,30 @@ class Main extends Component {
                         </div>
                   </main>
                 </div>
+                </center>
+                </row>
+                <br /><br />
+                <center>
+                
+                <ChartsPage />
+                <br />
+                <Fab color="primary" aria-label="add">
+                    <AddIcon />
+                </Fab>
+                &emsp;
+                <Fab color="secondary" aria-label="edit">
+                    <EditIcon />
+                </Fab>&emsp;
+                <Fab variant="extended">
+                    <NavigationIcon />
+                    <h4>Navigate</h4>
+                </Fab>&emsp;
+                <Fab disabled aria-label="like">
+                    <FavoriteIcon />
+                </Fab>&emsp;
+                </center>
+                <br /><br />
+                <br /><br />
               </div>
             );}
             else {

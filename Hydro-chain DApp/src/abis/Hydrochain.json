@@ -162,15 +162,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"deployer\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"billPaid\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"userAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tunits\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"cunits\",\"type\":\"uint256\"}],\"name\":\"unitsAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"userAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tunits\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"cunits\",\"type\":\"uint256\"}],\"name\":\"userInitialized\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_units\",\"type\":\"uint256\"}],\"name\":\"addUnit\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"initializeUser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"payBill\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"uCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"users\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"userAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tunits\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"cunits\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/E/CS/Hackathons/Devfolio online/HackInOut/new/Hydro-chain/Hydro-chain DApp/src/contracts/Hydrochain.sol\":\"Hydrochain\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/E/CS/Hackathons/Devfolio online/HackInOut/new/Hydro-chain/Hydro-chain DApp/src/contracts/Hydrochain.sol\":{\"keccak256\":\"0x3b31fb40f500c96adebc143e60cec946847c8881d3f6e17745232069e6b3792b\",\"urls\":[\"bzz-raw://5a820cbef6b1f3252a92d48fcf4c8da69d3e78d15528c9483ddbcf538fb08fda\",\"dweb:/ipfs/QmW8CUsPARpaaidcmDspC2toVmKd9fXwybrFXMnibUVdiu\"]}},\"version\":1}",
-  "bytecode": "0x60806040526000805534801561001457600080fd5b50610855806100246000396000f3fe60806040526004361061004a5760003560e01c8063341dc9f31461004f578063365b98b21461008a5780634b353888146101135780637a7816581461012a5780637bc8924b14610134575b600080fd5b34801561005b57600080fd5b506100886004803603602081101561007257600080fd5b810190808035906020019092919050505061015f565b005b34801561009657600080fd5b506100c3600480360360208110156100ad57600080fd5b81019080803590602001909291905050506103a4565b604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828152602001935050505060405180910390f35b34801561011f57600080fd5b506101286103ee565b005b610132610524565b005b34801561014057600080fd5b506101496107e3565b6040518082815260200191505060405180910390f35b600081101561016d57600080fd5b60006101776107e9565b600191505b6000548211610289573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561027e57600160008381526020019081526020016000206040518060600160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001600182015481526020016002820154815250509050610289565b81600101915061017c565b80602001518311156102b65780602001518303816040018181510191508181525050828160200181815250505b806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155604082015181600201559050507fb726d633763890959f84370289b530da7d8a9557dcf86d879616175b5028c83f33848360400151604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828152602001935050505060405180910390a1505050565b60016020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154908060020154905083565b600080815480929190600101919050555060405180606001604052803373ffffffffffffffffffffffffffffffffffffffff168152602001600081526020016000815250600160008054815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155604082015181600201559050507ffb40e81b4943c144acfb5c456ea50bf2a25d6f78a23bb5b22aa640a351ba377360005433600080604051808581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200183815260200182815260200194505050505060405180910390a1565b60006001600080815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156105a5573d6000803e3d6000fd5b5060006105b06107e9565b600191505b60005482116106c2573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156106b757600160008381526020019081526020016000206040518060600160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820154815260200160028201548152505090506106c2565b8160010191506105b5565b6000816040018181525050806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155604082015181600201559050507fc217499589f3ec1d5b2891594c80d8e6493c0ea24a503908b460cc5a806e9f69833334604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1505050565b60005481565b6040518060600160405280600073ffffffffffffffffffffffffffffffffffffffff1681526020016000815260200160008152509056fea265627a7a72315820c5cf4abb8954af829469603fdb16bab7c7eb9db2cedc2ff1356f2263b2fc9a9864736f6c63430005100032",
-  "deployedBytecode": "0x60806040526004361061004a5760003560e01c8063341dc9f31461004f578063365b98b21461008a5780634b353888146101135780637a7816581461012a5780637bc8924b14610134575b600080fd5b34801561005b57600080fd5b506100886004803603602081101561007257600080fd5b810190808035906020019092919050505061015f565b005b34801561009657600080fd5b506100c3600480360360208110156100ad57600080fd5b81019080803590602001909291905050506103a4565b604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828152602001935050505060405180910390f35b34801561011f57600080fd5b506101286103ee565b005b610132610524565b005b34801561014057600080fd5b506101496107e3565b6040518082815260200191505060405180910390f35b600081101561016d57600080fd5b60006101776107e9565b600191505b6000548211610289573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561027e57600160008381526020019081526020016000206040518060600160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001600182015481526020016002820154815250509050610289565b81600101915061017c565b80602001518311156102b65780602001518303816040018181510191508181525050828160200181815250505b806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155604082015181600201559050507fb726d633763890959f84370289b530da7d8a9557dcf86d879616175b5028c83f33848360400151604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828152602001935050505060405180910390a1505050565b60016020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154908060020154905083565b600080815480929190600101919050555060405180606001604052803373ffffffffffffffffffffffffffffffffffffffff168152602001600081526020016000815250600160008054815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155604082015181600201559050507ffb40e81b4943c144acfb5c456ea50bf2a25d6f78a23bb5b22aa640a351ba377360005433600080604051808581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200183815260200182815260200194505050505060405180910390a1565b60006001600080815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156105a5573d6000803e3d6000fd5b5060006105b06107e9565b600191505b60005482116106c2573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156106b757600160008381526020019081526020016000206040518060600160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820154815260200160028201548152505090506106c2565b8160010191506105b5565b6000816040018181525050806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155604082015181600201559050507fc217499589f3ec1d5b2891594c80d8e6493c0ea24a503908b460cc5a806e9f69833334604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1505050565b60005481565b6040518060600160405280600073ffffffffffffffffffffffffffffffffffffffff1681526020016000815260200160008152509056fea265627a7a72315820c5cf4abb8954af829469603fdb16bab7c7eb9db2cedc2ff1356f2263b2fc9a9864736f6c63430005100032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"deployer\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"billPaid\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"userAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tunits\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"cunits\",\"type\":\"uint256\"}],\"name\":\"unitsAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"userAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tunits\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"cunits\",\"type\":\"uint256\"}],\"name\":\"userInitialized\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_units\",\"type\":\"uint256\"}],\"name\":\"addUnit\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"initializeUser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"payBill\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"uCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"users\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"userAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tunits\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"cunits\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Abel Simon Zachariah/Projects/Hydro-chain/Hydro-chain DApp/src/contracts/Hydrochain.sol\":\"Hydrochain\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Abel Simon Zachariah/Projects/Hydro-chain/Hydro-chain DApp/src/contracts/Hydrochain.sol\":{\"keccak256\":\"0x3b31fb40f500c96adebc143e60cec946847c8881d3f6e17745232069e6b3792b\",\"urls\":[\"bzz-raw://5a820cbef6b1f3252a92d48fcf4c8da69d3e78d15528c9483ddbcf538fb08fda\",\"dweb:/ipfs/QmW8CUsPARpaaidcmDspC2toVmKd9fXwybrFXMnibUVdiu\"]}},\"version\":1}",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b50610855806100246000396000f3fe60806040526004361061004a5760003560e01c8063341dc9f31461004f578063365b98b21461008a5780634b353888146101135780637a7816581461012a5780637bc8924b14610134575b600080fd5b34801561005b57600080fd5b506100886004803603602081101561007257600080fd5b810190808035906020019092919050505061015f565b005b34801561009657600080fd5b506100c3600480360360208110156100ad57600080fd5b81019080803590602001909291905050506103a4565b604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828152602001935050505060405180910390f35b34801561011f57600080fd5b506101286103ee565b005b610132610524565b005b34801561014057600080fd5b506101496107e3565b6040518082815260200191505060405180910390f35b600081101561016d57600080fd5b60006101776107e9565b600191505b6000548211610289573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561027e57600160008381526020019081526020016000206040518060600160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001600182015481526020016002820154815250509050610289565b81600101915061017c565b80602001518311156102b65780602001518303816040018181510191508181525050828160200181815250505b806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155604082015181600201559050507fb726d633763890959f84370289b530da7d8a9557dcf86d879616175b5028c83f33848360400151604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828152602001935050505060405180910390a1505050565b60016020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154908060020154905083565b600080815480929190600101919050555060405180606001604052803373ffffffffffffffffffffffffffffffffffffffff168152602001600081526020016000815250600160008054815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155604082015181600201559050507ffb40e81b4943c144acfb5c456ea50bf2a25d6f78a23bb5b22aa640a351ba377360005433600080604051808581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200183815260200182815260200194505050505060405180910390a1565b60006001600080815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156105a5573d6000803e3d6000fd5b5060006105b06107e9565b600191505b60005482116106c2573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156106b757600160008381526020019081526020016000206040518060600160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820154815260200160028201548152505090506106c2565b8160010191506105b5565b6000816040018181525050806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155604082015181600201559050507fc217499589f3ec1d5b2891594c80d8e6493c0ea24a503908b460cc5a806e9f69833334604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1505050565b60005481565b6040518060600160405280600073ffffffffffffffffffffffffffffffffffffffff1681526020016000815260200160008152509056fea265627a7a723158202b91756f129f073c7005f402ab5fa9aa1ffd23f2e483db313025218ee9a44aaf64736f6c63430005100032",
+  "deployedBytecode": "0x60806040526004361061004a5760003560e01c8063341dc9f31461004f578063365b98b21461008a5780634b353888146101135780637a7816581461012a5780637bc8924b14610134575b600080fd5b34801561005b57600080fd5b506100886004803603602081101561007257600080fd5b810190808035906020019092919050505061015f565b005b34801561009657600080fd5b506100c3600480360360208110156100ad57600080fd5b81019080803590602001909291905050506103a4565b604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828152602001935050505060405180910390f35b34801561011f57600080fd5b506101286103ee565b005b610132610524565b005b34801561014057600080fd5b506101496107e3565b6040518082815260200191505060405180910390f35b600081101561016d57600080fd5b60006101776107e9565b600191505b6000548211610289573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561027e57600160008381526020019081526020016000206040518060600160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001600182015481526020016002820154815250509050610289565b81600101915061017c565b80602001518311156102b65780602001518303816040018181510191508181525050828160200181815250505b806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155604082015181600201559050507fb726d633763890959f84370289b530da7d8a9557dcf86d879616175b5028c83f33848360400151604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828152602001935050505060405180910390a1505050565b60016020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154908060020154905083565b600080815480929190600101919050555060405180606001604052803373ffffffffffffffffffffffffffffffffffffffff168152602001600081526020016000815250600160008054815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155604082015181600201559050507ffb40e81b4943c144acfb5c456ea50bf2a25d6f78a23bb5b22aa640a351ba377360005433600080604051808581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200183815260200182815260200194505050505060405180910390a1565b60006001600080815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508073ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156105a5573d6000803e3d6000fd5b5060006105b06107e9565b600191505b60005482116106c2573373ffffffffffffffffffffffffffffffffffffffff166001600084815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156106b757600160008381526020019081526020016000206040518060600160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016001820154815260200160028201548152505090506106c2565b8160010191506105b5565b6000816040018181525050806001600084815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155604082015181600201559050507fc217499589f3ec1d5b2891594c80d8e6493c0ea24a503908b460cc5a806e9f69833334604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1505050565b60005481565b6040518060600160405280600073ffffffffffffffffffffffffffffffffffffffff1681526020016000815260200160008152509056fea265627a7a723158202b91756f129f073c7005f402ab5fa9aa1ffd23f2e483db313025218ee9a44aaf64736f6c63430005100032",
   "sourceMap": "27:1734:0:-;;;73:1;54:20;;27:1734;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:1734:0;;;;;;;",
   "deployedSourceMap": "27:1734:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;781:504;;8:9:-1;5:2;;;30:1;27;20:12;5:2;781:504:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;781:504:0;;;;;;;;;;;;;;;;;:::i;:::-;;81:34;;8:9:-1;5:2;;;30:1;27;20:12;5:2;81:34:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;81:34:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;607:166;;8:9:-1;5:2;;;30:1;27;20:12;5:2;607:166:0;;;:::i;:::-;;1293:465;;;:::i;:::-;;54:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;54:20:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;781:504;847:1;837:6;:11;;829:20;;;;;;860:7;878:17;;:::i;:::-;913:1;910:4;;906:150;919:6;;915:2;:10;906:150;;971:10;948:33;;:5;:9;954:2;948:9;;;;;;;;;;;:21;;;;;;;;;;;;:33;;;945:111;;;1007:5;:9;1013:2;1007:9;;;;;;;;;;;1001:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1035:5;;945:111;926:4;;;;;906:150;;;1078:5;:12;;;1069:6;:21;1066:126;;;1132:5;:12;;;1123:6;:21;1107:5;:12;;:37;;;;;;;;;;;1174:6;1159:5;:12;;:21;;;;;1066:126;1214:5;1202;:9;1208:2;1202:9;;;;;;;;;;;:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1235:42;1246:10;1257:6;1264:5;:12;;;1235:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;781:504;;;:::o;81:34::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;607:166::-;651:6;;:8;;;;;;;;;;;;;686:22;;;;;;;;691:10;686:22;;;;;;703:1;686:22;;;;706:1;686:22;;;670:5;:13;676:6;;670:13;;;;;;;;;;;:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;724:41;740:6;;748:10;760:1;763;724:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;607:166::o;1293:465::-;1338:25;1366:5;:8;1372:1;1366:8;;;;;;;;;;;:20;;;;;;;;;;;;1338:48;;1405:9;1397:27;;:38;1425:9;1397:38;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1397:38:0;1446:7;1464:17;;:::i;:::-;1499:1;1496:4;;1492:150;1505:6;;1501:2;:10;1492:150;;1557:10;1534:33;;:5;:9;1540:2;1534:9;;;;;;;;;;;:21;;;;;;;;;;;;:33;;;1531:111;;;1593:5;:9;1599:2;1593:9;;;;;;;;;;;1587:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1621:5;;1531:111;1512:4;;;;;1492:150;;;1665:1;1652:5;:12;;:14;;;;;1689:5;1677;:9;1683:2;1677:9;;;;;;;;;;;:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1710:40;1719:9;1729:10;1740:9;1710:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1293:465;;;:::o;54:20::-;;;;:::o;27:1734::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Hydrochain {\r\n    uint public uCount=0;\r\n    mapping(uint => User) public users;\r\n\r\n    struct User {\r\n        address payable userAddress;\r\n        uint tunits;\r\n        uint cunits;\r\n    }\r\n\r\n    event userInitialized(\r\n        uint id,\r\n        address payable userAddress, \r\n        uint tunits,\r\n        uint cunits\r\n    );\r\n\r\n    event unitsAdded (\r\n        address payable userAddress, \r\n        uint tunits,\r\n        uint cunits\r\n    );\r\n\r\n    event billPaid (\r\n        address payable deployer,\r\n        address payable user,\r\n        uint amount\r\n    );\r\n\r\n    function initializeUser() public {\r\n        uCount++;\r\n        users[uCount] = User(msg.sender, 0, 0);\r\n        emit userInitialized(uCount, msg.sender, 0, 0);\r\n    }\r\n\r\n    function addUnit(uint _units) public {\r\n        require(_units >= 0);\r\n        uint _i;\r\n        User memory _user;\r\n        for(_i=1;_i<=uCount;++_i)\r\n            if(users[_i].userAddress==msg.sender){\r\n                _user=users[_i];\r\n                break;\r\n            }\r\n        if(_units > _user.tunits) {\r\n            _user.cunits += _units - _user.tunits;\r\n            _user.tunits = _units;\r\n        }\r\n        users[_i] = _user;\r\n        emit unitsAdded(msg.sender,_units,_user.cunits);\r\n    }\r\n\r\n    function payBill() public payable {\r\n        address payable _deployer = users[0].userAddress;\r\n        address(_deployer).transfer(msg.value);\r\n        uint _i;\r\n        User memory _user;\r\n        for(_i=1;_i<=uCount;++_i)\r\n            if(users[_i].userAddress==msg.sender){\r\n                _user=users[_i];\r\n                break;\r\n            }\r\n        _user.cunits=0;\r\n        users[_i] = _user;\r\n        emit billPaid(_deployer,msg.sender,msg.value);\r\n    }\r\n}\r\n",
-  "sourcePath": "E:\\CS\\Hackathons\\Devfolio online\\HackInOut\\new\\Hydro-chain\\Hydro-chain DApp\\src\\contracts\\Hydrochain.sol",
+  "sourcePath": "C:\\Users\\Abel Simon Zachariah\\Projects\\Hydro-chain\\Hydro-chain DApp\\src\\contracts\\Hydrochain.sol",
   "ast": {
-    "absolutePath": "/E/CS/Hackathons/Devfolio online/HackInOut/new/Hydro-chain/Hydro-chain DApp/src/contracts/Hydrochain.sol",
+    "absolutePath": "/C/Users/Abel Simon Zachariah/Projects/Hydro-chain/Hydro-chain DApp/src/contracts/Hydrochain.sol",
     "exportedSymbols": {
       "Hydrochain": [
         220
@@ -2997,7 +2997,7 @@
     "src": "0:1763:0"
   },
   "legacyAST": {
-    "absolutePath": "/E/CS/Hackathons/Devfolio online/HackInOut/new/Hydro-chain/Hydro-chain DApp/src/contracts/Hydrochain.sol",
+    "absolutePath": "/C/Users/Abel Simon Zachariah/Projects/Hydro-chain/Hydro-chain DApp/src/contracts/Hydrochain.sol",
     "exportedSymbols": {
       "Hydrochain": [
         220
@@ -5903,10 +5903,187 @@
       "links": {},
       "address": "0xf7E7829288433CBA4Fc99A433202311507F8F023",
       "transactionHash": "0x0bb9d8762b6af240a497a412ef9f7db4b3de0dad92ae586df9c85714d4bce858"
+    },
+    "1608310408765": {
+      "events": {
+        "0xc217499589f3ec1d5b2891594c80d8e6493c0ea24a503908b460cc5a806e9f69": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "deployer",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "user",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "billPaid",
+          "type": "event"
+        },
+        "0xb726d633763890959f84370289b530da7d8a9557dcf86d879616175b5028c83f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "userAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tunits",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "cunits",
+              "type": "uint256"
+            }
+          ],
+          "name": "unitsAdded",
+          "type": "event"
+        },
+        "0xfb40e81b4943c144acfb5c456ea50bf2a25d6f78a23bb5b22aa640a351ba3773": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "userAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tunits",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "cunits",
+              "type": "uint256"
+            }
+          ],
+          "name": "userInitialized",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x0F71653afc84CCDC71047E0fc77A09f05D46fB29",
+      "transactionHash": "0xf3d745b5128ad06378343c0a8173b819dd8535e79c21cf88ee338b441ac6208e"
+    },
+    "1608380770567": {
+      "events": {
+        "0xc217499589f3ec1d5b2891594c80d8e6493c0ea24a503908b460cc5a806e9f69": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "deployer",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "user",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "billPaid",
+          "type": "event"
+        },
+        "0xb726d633763890959f84370289b530da7d8a9557dcf86d879616175b5028c83f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "userAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tunits",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "cunits",
+              "type": "uint256"
+            }
+          ],
+          "name": "unitsAdded",
+          "type": "event"
+        },
+        "0xfb40e81b4943c144acfb5c456ea50bf2a25d6f78a23bb5b22aa640a351ba3773": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "userAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tunits",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "cunits",
+              "type": "uint256"
+            }
+          ],
+          "name": "userInitialized",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x9D2bA7D0eEAE68C35c6A10cBEE570FfADE7e3407",
+      "transactionHash": "0x11848d9c70449e0bbf28d00316d1a6867482c72a3699543b4ab33767a7a34f5f"
     }
   },
   "schemaVersion": "3.2.0",
-  "updatedAt": "2020-12-14T18:28:53.074Z",
+  "updatedAt": "2020-12-19T12:26:42.263Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
