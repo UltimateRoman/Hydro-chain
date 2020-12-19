@@ -104,9 +104,9 @@ class Main extends Component {
                         <div class="flip-card-inner">
                             <div class="flip-card-front1">
                                 <br/>
-                                <h1 style={{fontSize: 70}}>{parseInt(this.state.user.cunits.toString())*0.015}</h1>
+                                <h1 style={{fontSize: 70}}>{parseInt(this.state.user.cunits.toString())*0.011}</h1>
                                 <br/>
-                                <h1 style={{fontSize: 50}}>ETH</h1>
+                                <h1 style={{fontSize: 50}}>MATIC</h1>
                             </div>
                             <div class="flip-card-back">
                             </div>
@@ -114,7 +114,7 @@ class Main extends Component {
                         </div>
                         <br/><br/>
                         <Button variant="info" name="3" onClick={(event) => {
-                                  let amount = this.state.user.cunits.toString()*15000000000000000
+                                  let amount = this.state.user.cunits.toString()*11000000000000000
                                   this.props.payBill(amount)
                         }}>Pay Now</Button>           
                         </div>

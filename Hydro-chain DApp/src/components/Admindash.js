@@ -74,7 +74,7 @@ class Admindash extends Component {
                         </TableCell>
                         <TableCell > <span style={styleObj}>{user.cunits.toString()}</span>
                         </TableCell>
-                        <TableCell ><span style={styleObj}>{user.cunits.toString()*0.015}</span></TableCell>
+                        <TableCell ><span style={styleObj}>{user.cunits.toString()*0.011} MATIC</span></TableCell>
                         <TableCell ><span style={styleObj}>{user.lastDate}</span></TableCell>
                       </TableRow>
                     ))}
