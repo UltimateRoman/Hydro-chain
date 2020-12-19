@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Component } from 'react';
 import Button1 from '@material-ui/core/Button';
 import {Button} from 'react-bootstrap';
@@ -10,15 +9,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import NavigationIcon from '@material-ui/icons/Navigation';
 import IconButton from '@material-ui/core/IconButton';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-=======
-import React, { Component} from 'react';
-import axios from 'axios';
-import {Button} from 'react-bootstrap';
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
-import { fontSize } from '@material-ui/system';
->>>>>>> 06b5f0d26d910dcd5fae03d8a09a0bda4226b468
-
+import Navbar from './Components/Navbar'
 import ChartsPage from './chart';
 class Main extends Component {
 
@@ -34,12 +25,8 @@ class Main extends Component {
     setBill() {
         axios.get('http://192.168.1.14/')
         .then(response => {
-<<<<<<< HEAD
             const val =  response.data
             this.setState({val})
-=======
-            this.props.addUnit(Math.round(response.data/100))
->>>>>>> 06b5f0d26d910dcd5fae03d8a09a0bda4226b468
         })
     }
 
@@ -56,13 +43,11 @@ class Main extends Component {
 
         if (this.state.isuser) {
             return (
-<<<<<<< HEAD
                 
-=======
-                <center>
->>>>>>> 06b5f0d26d910dcd5fae03d8a09a0bda4226b468
                 <div className="container-fluid mt-5">
                 <row>
+                    <Navbar />
+                    <br /><br />
                     <center>
                         <Button1 variant="contained"><h3>REPORT</h3></Button1>&emsp;
                         <Button1 variant="contained" color="primary">
@@ -87,12 +72,7 @@ class Main extends Component {
                         <center>
                         
                     <div className="row">
-<<<<<<< HEAD
                         
-=======
-                        <Navbar />
-                        <br/><hr/><br/>
->>>>>>> 06b5f0d26d910dcd5fae03d8a09a0bda4226b468
                         <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '500px' }}>
                         <div className="content mr-auto ml-auto">
                         <p>&nbsp;</p>
@@ -112,11 +92,10 @@ class Main extends Component {
                         </div>
                         </main>
                         <br/><br/>
-                        <hr/>
-                        <Footer />
+                       
+                   
                     </div>
-                </div>
-<<<<<<< HEAD
+                
                 </center>
                 </row>
                 <br /><br />
@@ -142,9 +121,6 @@ class Main extends Component {
                 <br /><br />
                 <br /><br />
               </div>
-=======
-                </center>  
->>>>>>> 06b5f0d26d910dcd5fae03d8a09a0bda4226b468
             );}
             else {
                 return (
