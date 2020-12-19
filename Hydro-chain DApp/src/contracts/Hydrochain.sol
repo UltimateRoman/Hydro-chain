@@ -1,11 +1,13 @@
 pragma solidity ^0.5.0;
 
 contract Hydrochain {
+    address payable public admin = "Admin address";
     uint public uCount=0;
     mapping(uint => User) public users;
 
     struct User {
         address payable userAddress;
+        string lastDate;
         uint tunits;
         uint cunits;
     }
@@ -13,6 +15,7 @@ contract Hydrochain {
     event userInitialized(
         uint id,
         address payable userAddress, 
+        string lastDate,
         uint tunits,
         uint cunits
     );
@@ -26,13 +29,14 @@ contract Hydrochain {
     event billPaid (
         address payable deployer,
         address payable user,
+        string lastDate,
         uint amount
     );
 
     function initializeUser() public {
         uCount++;
-        users[uCount] = User(msg.sender, 0, 0);
-        emit userInitialized(uCount, msg.sender, 0, 0);
+        users[uCount] = User(msg.sender, "N/A", 0, 0);
+        emit userInitialized(uCount, msg.sender, "N/A", 0, 0);
     }
 
     function addUnit(uint _units) public {
@@ -52,8 +56,8 @@ contract Hydrochain {
         emit unitsAdded(msg.sender,_units,_user.cunits);
     }
 
-    function payBill() public payable {
-        address payable _deployer = users[0].userAddress;
+    function payBill(string memory _date) public payable {
+        address payable _deployer = admin;
         address(_deployer).transfer(msg.value);
         uint _i;
         User memory _user;
@@ -63,7 +67,8 @@ contract Hydrochain {
                 break;
             }
         _user.cunits=0;
+        _user.lastDate=_date;
         users[_i] = _user;
-        emit billPaid(_deployer,msg.sender,msg.value);
+        emit billPaid(_deployer,msg.sender,_date,msg.value);
     }
 }
