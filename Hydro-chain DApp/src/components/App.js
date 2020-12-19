@@ -71,8 +71,9 @@ class App extends Component {
   }
 
   payBill(amount) {
+    let date = new Date().toDateString();
     this.setState({ loading: true })
-    this.state.hydroChain.methods.payBill().send({ from: this.state.account, value: amount })
+    this.state.hydroChain.methods.payBill(date).send({ from: this.state.account, value: amount })
     .once('confirmation', (n, receipt) => {
       this.setState({ loading: false })
       window.location.reload()

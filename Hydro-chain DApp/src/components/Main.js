@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component} from 'react';
 import axios from 'axios';
 import {Button} from 'react-bootstrap';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import { fontSize } from '@material-ui/system';
 
 class Main extends Component {
 
@@ -32,36 +33,38 @@ class Main extends Component {
     }
 
     render() {
+
         if (this.state.isuser) {
             return (
+                <center>
                 <div className="container-fluid mt-5">
                     <div className="row">
                         <Navbar />
+                        <br/><hr/><br/>
                         <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '500px' }}>
                         <div className="content mr-auto ml-auto">
                         <p>&nbsp;</p>
-                        <center>
-                        <p style={{color: "white"}}>Welcome, {this.state.user.userAddress}</p>
+                        <p style={{color: "white", fontSize: 15}}>Welcome, {this.state.user.userAddress}</p>
                         <h2 style={{color: "white"}}>Hydro-chain</h2>
                         <br/><br/>
                         <Button variant="outline-info" onClick={this.setBill}>Update</Button>
                         <br/><br/>
-                        <p style={{color: "white"}}>Units you have consumed: {this.state.user.cunits.toString()} units</p>
-                        <React.Fragment>
-                        <p style={{color: "white"}}>Amount due: {parseInt(this.state.user.cunits.toString())*0.01} ETH</p>
+                        <p style={{color: "white", fontSize: 24}}>Units you have consumed: {this.state.user.cunits.toString()} units</p>
+                        <br/><br/>
+                        <p style={{color: "white", fontSize: 24}}>Amount due: {parseInt(this.state.user.cunits.toString())*0.015} ETH</p>
+                        <br/>
                         <Button variant="info" name="3" onClick={(event) => {
-                                  let amount = this.state.user.cunits.toString()*10000000000000000
+                                  let amount = this.state.user.cunits.toString()*15000000000000000
                                   this.props.payBill(amount)
-                        }}>Pay Now</Button>  
-                        </React.Fragment>               
-                        </center>
+                        }}>Pay Now</Button>           
                         </div>
+                        </main>
                         <br/><br/>
                         <hr/>
                         <Footer />
-                  </main>
+                    </div>
                 </div>
-              </div>
+                </center>  
             );}
             else {
                 return (
