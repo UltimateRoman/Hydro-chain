@@ -50,3 +50,5 @@ $ npm install
 $ truffle migrate --network matic
 $ npm run start
 ```
+
+Enjoy the Hydro-chain experience!
