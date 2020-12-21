@@ -34,7 +34,7 @@ $ npm run start
 ### Hydro-chain Layout
 <br/>
 
-![Hydro chain diagram](1.jpg?raw=true)
+![Hydro chain diagram](1.jpeg?raw=true)
 
 <br/>
 
