@@ -82,9 +82,8 @@ class Main extends Component {
                         <p style={{color: "white", fontSize: 20}}>Welcome, {this.state.user.userAddress}</p>
                         <br/><br/>
                         <Button variant="success" onClick={this.setBill}>Update</Button>
-                        <br/><br/>
-                        <p style={{color: "white", fontSize: 24}}>Units you have consumed:</p>
                         <br/>
+                        <p style={{color: "white", fontSize: 24}}>Units you have consumed:</p>
                         <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -97,9 +96,7 @@ class Main extends Component {
                             </div>
                         </div>
                         </div>
-                        <br/>
                         <p style={{color: "white", fontSize: 24}}>Amount due:</p>
-                        <br/>
                         <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front1">
@@ -112,7 +109,7 @@ class Main extends Component {
                             </div>
                         </div>
                         </div>
-                        <br/><br/>
+                        <br/>
                         <Button variant="info" name="3" onClick={(event) => {
                                   let amount = this.state.user.cunits.toString()*11000000000000000
                                   this.props.payBill(amount)

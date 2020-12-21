@@ -1,7 +1,7 @@
 pragma solidity ^0.5.0;
 
 contract Hydrochain {
-    address payable public admin = "Admin Address";
+    address payable public admin = 0x7cD6861308e8c04D4FC622F9CD59522Aeb28912c;
     uint public uCount=0;
     mapping(uint => User) public users;
 
