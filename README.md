@@ -31,8 +31,13 @@ $ truffle migrate --network matic
 $ npm run start
 ```
 
-Other details coming soon.....
+### Hydro-chain Layout
+<br/>
 
+![Hydro chain diagram](1.jpg?raw=true)
 
+<br/>
+
+Initially the user logs into Hydro chain web app where he can see his water consumption rate. An IoT-based water consumption analysis device allows for complete insight and control over this procedure. The device sensors can dynamically record the water usage data on to the blockchain.It can also identify unusual water consumption trends by comparison with previous tamper-proof records and can help to immediately identify leaks in the household plumbing network.Our IoT module uses a ultrasonic sensor to calculate the water consumption and sends this data to Hydro-Chain web app.  After this he/she can pay the water bill in crypto using blockchain. Payment are then done directly to the Water Authority, powered by Matic's instant transactions. This ensures credible bill payments, avoiding intermediaries.The collaboration between Blockchain and IoT thus provides a secure, transparent and efficient mechanism. 
 
 
