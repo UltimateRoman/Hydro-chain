@@ -6,6 +6,8 @@
 
 A Blockchain and IOT based system to decentralize the conventional water consumption analysis and billing process.
 
+#### [Contract deployment on Matic Mumbai Testnet](https://mumbai.polygonscan.com/address/0x2c794e693b3bc5714938541f34121a3448f431ae)
+
 ## Hydro-chain Layout
 
 <br/>
